@@ -27,30 +27,44 @@
     }
   });
 
-  // 2. Screenshot lightbox modal viewer
+  // 2. Screenshot lightbox modal viewer (styled like reference photo)
   var box = document.getElementById("lightbox");
   var img = document.getElementById("lb-img");
   var caption = document.getElementById("lb-caption");
+  var counter = document.getElementById("lb-counter");
+  var closeBtn = document.getElementById("lb-close");
 
   if (box && typeof box.showModal === "function") {
-    document.querySelectorAll(".shot-btn").forEach(function (btn) {
+    var buttons = Array.from(document.querySelectorAll(".shot-btn"));
+    buttons.forEach(function (btn, index) {
       btn.addEventListener("click", function () {
         var fullSrc = btn.getAttribute("data-full");
         var altText = btn.getAttribute("data-alt") || "";
-        var capText = btn.getAttribute("data-caption") || altText;
+        var titleText = btn.getAttribute("data-title") || btn.getAttribute("data-caption") || altText;
+        var countText = btn.getAttribute("data-counter") || (index + 1) + " / " + buttons.length;
 
         if (img) {
           img.src = fullSrc;
           img.alt = altText;
         }
         if (caption) {
-          caption.textContent = capText;
+          caption.textContent = titleText;
+        }
+        if (counter) {
+          counter.textContent = countText;
         }
         box.showModal();
       });
     });
 
-    // Close when clicking outside dialog content
+    if (closeBtn) {
+      closeBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        box.close();
+      });
+    }
+
+    // Close when clicking outside content (on the dialog backdrop)
     box.addEventListener("click", function (e) {
       if (e.target === box) {
         box.close();
@@ -66,11 +80,11 @@
   }
 
   // 3. Highlight active nav link on scroll
-  var sections = document.querySelectorAll("section[id], header[id]");
+  var sections = document.querySelectorAll("section[id]");
   var navLinks = document.querySelectorAll(".nav-links-wrap a[href^='#'], .nav a[href^='#'], a.nav-item");
 
   function onScroll() {
-    var scrollPos = window.scrollY + 120;
+    var scrollPos = window.scrollY + 140;
     sections.forEach(function (sec) {
       var top = sec.offsetTop;
       var height = sec.offsetHeight;
@@ -90,4 +104,3 @@
 
   window.addEventListener("scroll", onScroll, { passive: true });
 })();
-
