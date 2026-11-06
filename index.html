@@ -374,84 +374,236 @@
     <section class="section" id="system">
       <div class="container">
         <div class="section-head">
-          <div class="eyebrow"><span class="eyebrow-index">05</span> System</div>
-          <h2 class="section-title">System Features & Live Interfaces</h2>
+          <div class="eyebrow"><span class="eyebrow-index">05</span> Subsystems & Features</div>
+          <h2 class="section-title">System Features & Modules</h2>
           <p class="section-lead">
-            Click any interface capture below to open the high-resolution lightbox view. All screenshots represent authentic screens extracted from the actual BayanLedger system deployment.
+            Explore the modular functional components engineered across the citizen transparency web portal, municipal administrative command center, cryptographic verification engine, and decentralized blockchain ledger.
           </p>
         </div>
 
-        <div class="shots-grid">
-          <!-- Screenshot 1: Dashboard -->
-          <div class="shot-card">
-            <div class="shot-card-img-wrap shot-btn" data-full="assets/img/dashboard.webp" data-alt="Real-Time Budget Transparency Dashboard" data-title="Real-Time Budget Dashboard" data-counter="1 / 6" data-caption="Displays municipal budget allocations, expenditures, milestone completion rates, and project pipeline status." role="button" tabindex="0">
-              <img src="assets/img/dashboard-sm.webp" width="960" height="458" alt="Real-Time Budget Transparency Dashboard" loading="lazy">
-              <span class="shot-zoom-overlay">🔍 Zoom</span>
-            </div>
-            <div class="shot-card-body">
-              <h4>Real-Time Budget Dashboard</h4>
-              <p>Displays live municipal capital outlays, obligated SARO funds, disbursed NCA sums, and project completion rates.</p>
-            </div>
+        <!-- 6 Subsystem Feature Cards in Grid-2 -->
+        <div class="grid-2">
+          <!-- Subsystem 1 -->
+          <div class="card">
+            <span class="tag tag-accent">Citizen Web Portal</span>
+            <h3 class="card-title">Public Budget Explorer & Community Feedback</h3>
+            <p class="card-text">
+              Open-access, mobile-responsive web portal enabling Santa Cruz constituents to inspect infrastructure allocations, track real-time project milestones, and submit civic feedback.
+            </p>
+            <ul class="card-feature-list">
+              <li>Real-time municipal capital outlay and SARO/NCA fund tracking</li>
+              <li>Interactive project milestone progress indicators (25%, 50%, 75%, 100%)</li>
+              <li>Geotagged site inspection photo and deliverable verification</li>
+              <li>Citizen project proposal submission and municipal auditor feedback</li>
+            </ul>
           </div>
 
-          <!-- Screenshot 2: Ledger -->
-          <div class="shot-card">
-            <div class="shot-card-img-wrap shot-btn" data-full="assets/img/ledger.webp" data-alt="Tamper-Proof Blockchain Budget Ledger" data-title="Tamper-Proof Budget Ledger" data-counter="2 / 6" data-caption="Records budget transactions, cryptographic transaction hashes, sender addresses, and block confirmations." role="button" tabindex="0">
-              <img src="assets/img/ledger-sm.webp" width="960" height="458" alt="Tamper-Proof Blockchain Budget Ledger" loading="lazy">
-              <span class="shot-zoom-overlay">🔍 Zoom</span>
-            </div>
-            <div class="shot-card-body">
-              <h4>Tamper-Proof Budget Ledger</h4>
-              <p>Verifiable Sepolia transaction ledger displaying immutable block heights, cryptographic hashes, and SARO references.</p>
-            </div>
+          <!-- Subsystem 2 -->
+          <div class="card">
+            <span class="tag tag-accent">LGU Administrative Portal</span>
+            <h3 class="card-title">MPDC Project Management & Milestone Authorization</h3>
+            <p class="card-text">
+              Secured administrative dashboard for the Municipal Planning and Development Coordinator (MPDC), budget officers, and municipal engineers to supervise public works.
+            </p>
+            <ul class="card-feature-list">
+              <li>End-to-end infrastructure project creation and contractor allocation</li>
+              <li>Physical progress inspection verification and document sign-offs</li>
+              <li>Automated fund obligation and milestone payout authorization</li>
+              <li>Role-Based Access Control (RBAC) with cryptographic session authentication</li>
+            </ul>
           </div>
 
-          <!-- Screenshot 3: Milestone Verification -->
-          <div class="shot-card">
-            <div class="shot-card-img-wrap shot-btn" data-full="assets/img/milestone.webp" data-alt="Milestone Progress and Deliverables Verification" data-title="Milestone Verification & Proofs" data-counter="3 / 6" data-caption="MPDC inspection checklist, photographic evidence validation, and milestone disbursement authorization." role="button" tabindex="0">
-              <img src="assets/img/milestone-sm.webp" width="960" height="454" alt="Milestone Progress and Deliverables Verification" loading="lazy">
-              <span class="shot-zoom-overlay">🔍 Zoom</span>
-            </div>
-            <div class="shot-card-body">
-              <h4>Milestone Verification & Proofs</h4>
-              <p>Enforces physical progress milestones (25%, 50%, 75%, 100%) paired with contractor inspection photos and SHA-256 hashes.</p>
-            </div>
+          <!-- Subsystem 3 -->
+          <div class="card">
+            <span class="tag tag-accent">Ethereum Sepolia Trust Layer</span>
+            <h3 class="card-title">StaCruzChain Solidity Smart Contract Execution</h3>
+            <p class="card-text">
+              Cryptographically autonomous smart contract deployed on the Ethereum Sepolia testnet enforcing tamper-proof, milestone-based municipal fund disbursements.
+            </p>
+            <ul class="card-feature-list">
+              <li>Multi-signature milestone release authorization protocols</li>
+              <li>Immutable block-level cryptographic state proofs</li>
+              <li>Decentralized ledger verification with public block heights and hashes</li>
+              <li>Algorithmic compliance enforcement for COA municipal auditing rules</li>
+            </ul>
           </div>
 
-          <!-- Screenshot 4: Audit Trail -->
-          <div class="shot-card">
-            <div class="shot-card-img-wrap shot-btn" data-full="assets/img/audit-trail.webp" data-alt="Digital Audit Trail and Tamper Detection" data-title="Digital Audit Trail & Detection" data-counter="4 / 6" data-caption="Immutable activity log capturing user actions, transaction timestamps, and tamper detection verification states." role="button" tabindex="0">
-              <img src="assets/img/audit-trail-sm.webp" width="960" height="460" alt="Digital Audit Trail and Tamper Detection" loading="lazy">
-              <span class="shot-zoom-overlay">🔍 Zoom</span>
-            </div>
-            <div class="shot-card-body">
-              <h4>Digital Audit Trail & Detection</h4>
-              <p>Comprehensive activity logger comparing live PostgreSQL database records against Sepolia block hashes to flag tampering.</p>
-            </div>
+          <!-- Subsystem 4 -->
+          <div class="card">
+            <span class="tag tag-accent">Verification & Proof Engine</span>
+            <h3 class="card-title">Multi-Gate Inspection & SHA-256 Hash Verification</h3>
+            <p class="card-text">
+              Verification pipeline pairing on-site physical engineering inspections with cryptographic data integrity guarantees to eliminate ghost or phantom projects.
+            </p>
+            <ul class="card-feature-list">
+              <li>Contractor milestone evidence and high-resolution photo uploads</li>
+              <li>SHA-256 cryptographic document hashing and storage validation</li>
+              <li>On-chain milestone gate completion validation before release</li>
+              <li>Automated freeze and disallowance on incomplete inspection claims</li>
+            </ul>
           </div>
 
-          <!-- Screenshot 5: Citizen Portal -->
-          <div class="shot-card">
-            <div class="shot-card-img-wrap shot-btn" data-full="assets/img/citizen-portal.webp" data-alt="Public Citizen Monitoring Interface" data-title="Citizen Monitoring Portal" data-counter="5 / 6" data-caption="Public project browser, funding source details, barangay filters, and community feedback module." role="button" tabindex="0">
-              <img src="assets/img/citizen-portal-sm.webp" width="960" height="459" alt="Public Citizen Monitoring Interface" loading="lazy">
-              <span class="shot-zoom-overlay">🔍 Zoom</span>
-            </div>
-            <div class="shot-card-body">
-              <h4>Citizen Monitoring Portal</h4>
-              <p>Open access portal allowing Sta. Cruz residents to browse municipal projects, inspect receipts, and submit proposals.</p>
-            </div>
+          <!-- Subsystem 5 -->
+          <div class="card">
+            <span class="tag tag-accent">Security & Tamper Detection</span>
+            <h3 class="card-title">Continuous Ledger-Database Discrepancy Auditing</h3>
+            <p class="card-text">
+              Continuous background surveillance module actively auditing relational database records against on-chain block states to detect unauthorized changes.
+            </p>
+            <ul class="card-feature-list">
+              <li>Automated hourly cross-verification of database records vs blockchain</li>
+              <li>Instant cryptographic discrepancy flags and anomaly alerts</li>
+              <li>Immutable historic state logs with operator wallet signatures</li>
+              <li>COA-ready forensic audit report generation</li>
+            </ul>
           </div>
 
-          <!-- Screenshot 6: Alerts -->
-          <div class="shot-card">
-            <div class="shot-card-img-wrap shot-btn" data-full="assets/img/alerts.webp" data-alt="Transaction Alert and Notification Interface" data-title="Transaction Alerts & Warnings" data-counter="6 / 6" data-caption="Real-time alert notifications for unusual transactions, schedule delays, and budget overrun warnings." role="button" tabindex="0">
-              <img src="assets/img/alerts-sm.webp" width="960" height="511" alt="Transaction Alert and Notification Interface" loading="lazy">
-              <span class="shot-zoom-overlay">🔍 Zoom</span>
-            </div>
-            <div class="shot-card-body">
-              <h4>Transaction Alerts & Warnings</h4>
-              <p>Automated surveillance flagging irregular budget adjustments, milestone delays, and unauthorized access attempts.</p>
-            </div>
+          <!-- Subsystem 6 -->
+          <div class="card">
+            <span class="tag tag-accent">Municipal Fiscal Analytics</span>
+            <h3 class="card-title">Real-Time Fund Obligation & Expenditure Tracking</h3>
+            <p class="card-text">
+              Data visualization engine providing Santa Cruz administrators and civil society observers comprehensive fiscal and infrastructural clarity.
+            </p>
+            <ul class="card-feature-list">
+              <li>Special Allotment Release Order (SARO) tracking and obligation gauges</li>
+              <li>Notice of Cash Allocation (NCA) disbursement schedules</li>
+              <li>Barangay-level fund allocation and infrastructure project distribution</li>
+              <li>Project pipeline velocity and milestone completion efficiency analytics</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- System Dashboards Showcase -->
+        <div class="screens-showcase">
+          <div class="screens-head">
+            <div class="eyebrow">System Dashboards & Live Interfaces</div>
+            <h3 class="card-title" style="font-size: 1.6rem; margin-top: 0.5rem; margin-bottom: 0.65rem;">Live System Interfaces & Workflows</h3>
+            <p class="section-lead" style="margin-bottom: 0;">
+              The core user dashboards and verification canvases of the live BayanLedger system: transparency dashboards for citizens, administrative command centers for municipal officials, milestone verification proof screens, and immutable blockchain ledger explorers. Click any interface preview to inspect the full-resolution view.
+            </p>
+          </div>
+
+          <div class="dash-list">
+            <!-- Row 1: Dashboard -->
+            <article class="dash-row">
+              <div class="dash-media">
+                <div class="screen-frame desktop shot-btn" data-full="assets/img/dashboard.webp" data-alt="Real-Time Budget Transparency Dashboard" role="button" tabindex="0">
+                  <img src="assets/img/dashboard-sm.webp" width="960" height="458" alt="Real-Time Budget Transparency Dashboard" loading="lazy">
+                  <span class="shot-zoom-overlay">🔍 Zoom</span>
+                </div>
+              </div>
+              <div class="dash-text">
+                <span class="tag tag-accent">Desktop · Administration Portal</span>
+                <h4>Real-Time Budget Dashboard</h4>
+                <p>The system administrator and budget officer's control panel. Admins track municipal capital outlays, obligated SARO funds, disbursed NCA sums, and project completion rates across Santa Cruz.</p>
+                <ul>
+                  <li>Real-time SARO and NCA obligation vs. disbursement gauges</li>
+                  <li>Municipal project pipeline health and status visualizers</li>
+                  <li>Filterable capital project records with one-click audit drilldowns</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Row 2: Ledger (Reverse) -->
+            <article class="dash-row reverse">
+              <div class="dash-media">
+                <div class="screen-frame desktop shot-btn" data-full="assets/img/ledger.webp" data-alt="Tamper-Proof Blockchain Budget Ledger" role="button" tabindex="0">
+                  <img src="assets/img/ledger-sm.webp" width="960" height="458" alt="Tamper-Proof Blockchain Budget Ledger" role="button" tabindex="0">
+                  <span class="shot-zoom-overlay">🔍 Zoom</span>
+                </div>
+              </div>
+              <div class="dash-text">
+                <span class="tag tag-accent">Blockchain · Trust & Audit Explorer</span>
+                <h4>Tamper-Proof Budget Ledger</h4>
+                <p>An immutable, publicly verifiable record of all budget authorizations and disbursement events logged directly to the Ethereum Sepolia testnet.</p>
+                <ul>
+                  <li>Verifiable Sepolia transaction ledger with immutable block heights</li>
+                  <li>Cryptographic transaction hashes and SARO reference mappings</li>
+                  <li>Transparent audit trail eliminating backdated financial entries</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Row 3: Milestone Verification -->
+            <article class="dash-row">
+              <div class="dash-media">
+                <div class="screen-frame desktop shot-btn" data-full="assets/img/milestone.webp" data-alt="Milestone Progress and Deliverables Verification" role="button" tabindex="0">
+                  <img src="assets/img/milestone-sm.webp" width="960" height="454" alt="Milestone Progress and Deliverables Verification" loading="lazy">
+                  <span class="shot-zoom-overlay">🔍 Zoom</span>
+                </div>
+              </div>
+              <div class="dash-text">
+                <span class="tag tag-accent">Field Verification · MPDC Engineering Portal</span>
+                <h4>Milestone Verification & Proofs</h4>
+                <p>The inspection workflow screen used by the Municipal Planning and Development Coordinator (MPDC) to review contractor progress submissions against physical milestones.</p>
+                <ul>
+                  <li>Multi-stage physical progress gates (25%, 50%, 75%, 100%)</li>
+                  <li>Contractor inspection photographs with SHA-256 integrity validation</li>
+                  <li>Verified milestone disbursement sign-off triggering smart contract release</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Row 4: Audit Trail (Reverse) -->
+            <article class="dash-row reverse">
+              <div class="dash-media">
+                <div class="screen-frame desktop shot-btn" data-full="assets/img/audit-trail.webp" data-alt="Digital Audit Trail and Tamper Detection" role="button" tabindex="0">
+                  <img src="assets/img/audit-trail-sm.webp" width="960" height="460" alt="Digital Audit Trail and Tamper Detection" loading="lazy">
+                  <span class="shot-zoom-overlay">🔍 Zoom</span>
+                </div>
+              </div>
+              <div class="dash-text">
+                <span class="tag tag-accent">Security · Fraud Detection Module</span>
+                <h4>Digital Audit Trail & Detection</h4>
+                <p>An automated surveillance interface comparing relational database records against blockchain blocks to detect any unauthorized data manipulation attempts.</p>
+                <ul>
+                  <li>Comprehensive activity logger capturing user actions and timestamps</li>
+                  <li>Automated reconciliation between PostgreSQL and Ethereum Sepolia</li>
+                  <li>Instant visual discrepancy alerts on state mismatches or unauthorized edits</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Row 5: Citizen Portal -->
+            <article class="dash-row">
+              <div class="dash-media">
+                <div class="screen-frame desktop shot-btn" data-full="assets/img/citizen-portal.webp" data-alt="Public Citizen Monitoring Interface" role="button" tabindex="0">
+                  <img src="assets/img/citizen-portal-sm.webp" width="960" height="459" alt="Public Citizen Monitoring Interface" loading="lazy">
+                  <span class="shot-zoom-overlay">🔍 Zoom</span>
+                </div>
+              </div>
+              <div class="dash-text">
+                <span class="tag tag-accent">Web & Mobile · Citizen Portal</span>
+                <h4>Citizen Monitoring Portal</h4>
+                <p>Open access portal allowing Sta. Cruz residents to browse municipal projects, inspect receipts, and submit proposals or feedback.</p>
+                <ul>
+                  <li>Public project catalog filterable by barangay and funding source</li>
+                  <li>Transparent breakdown of allocated funds and approved contractors</li>
+                  <li>Interactive citizen feedback module and project proposal submission</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Row 6: Alerts (Reverse) -->
+            <article class="dash-row reverse">
+              <div class="dash-media">
+                <div class="screen-frame desktop shot-btn" data-full="assets/img/alerts.webp" data-alt="Transaction Alert and Notification Interface" role="button" tabindex="0">
+                  <img src="assets/img/alerts-sm.webp" width="960" height="511" alt="Transaction Alert and Notification Interface" loading="lazy">
+                  <span class="shot-zoom-overlay">🔍 Zoom</span>
+                </div>
+              </div>
+              <div class="dash-text">
+                <span class="tag tag-accent">Surveillance · System Notifications</span>
+                <h4>Transaction Alerts & Warnings</h4>
+                <p>Automated surveillance flagging irregular budget adjustments, milestone delays, and unauthorized access attempts in real time.</p>
+                <ul>
+                  <li>Immediate notifications on budget overrun thresholds and delayed milestones</li>
+                  <li>Security warnings for unrecognized wallet signatures or failed validations</li>
+                  <li>Prioritized alert queue with one-click corrective workflow actions</li>
+                </ul>
+              </div>
+            </article>
           </div>
         </div>
       </div>

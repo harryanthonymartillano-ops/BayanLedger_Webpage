@@ -35,7 +35,7 @@
   if (box && typeof box.showModal === "function") {
     var buttons = Array.from(document.querySelectorAll(".shot-btn"));
     buttons.forEach(function (btn) {
-      btn.addEventListener("click", function () {
+      function openView() {
         var fullSrc = btn.getAttribute("data-full");
         var altText = btn.getAttribute("data-alt") || "Enlarged screenshot capture";
 
@@ -44,6 +44,14 @@
           img.alt = altText;
         }
         box.showModal();
+      }
+
+      btn.addEventListener("click", openView);
+      btn.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          openView();
+        }
       });
     });
 
