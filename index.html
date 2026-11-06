@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BayanLedger: Decentralized Budget Monitoring and Participatory Governance System for Sta. Cruz, Laguna</title>
+  <meta name="description" content="BayanLedger is an undergraduate capstone project from Laguna State Polytechnic University (LSPU CCS). It integrates Ethereum Sepolia blockchain with a multi-gate municipal budgeting workflow and public transparency portal for the Municipal Planning and Development Office (MPDO) of Sta. Cruz, Laguna.">
+  <meta name="theme-color" content="#09152b">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="BayanLedger: Decentralized Municipal Budget Monitoring & Governance">
+  <meta property="og:description" content="Blockchain-enabled budget transparency, multi-gate fund release verification, and citizen oversight for the Municipality of Sta. Cruz, Laguna.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/dashboard.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo-bayanledger.png">
+
+  <!-- Google Fonts: Newsreader & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" id="top">
+    <div class="wrap header-row">
+      <a class="brand" href="#top" aria-label="BayanLedger, back to top">
+        <img src="assets/img/logo-bayanledger.png" alt="BayanLedger Emblem" class="brand-logo" width="32" height="32">
+        <span class="brand-text">
+          <span>BayanLedger</span>
+          <span class="brand-badge">LSPU CCS</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#overview">Overview</a>
+        <a href="#team">Team</a>
+        <a href="#problem">Problem</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#system">System</a>
+        <a href="#results">Results</a>
+        <a href="#links">Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker">Undergraduate Capstone Project, <strong>BS Information Technology</strong> (Web & Mobile Application Development), Laguna State Polytechnic University</p>
+          <h1>Bayan<span>Ledger</span></h1>
+          <p class="hero-title">Design and Development of a Decentralized Budget Monitoring and Participatory Governance System for the Municipal Planning and Development Office of Sta. Cruz, Laguna</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" data-link="live" href="https://harryanthonymartillano-ops.github.io/Bayan-Ledger/" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              <span>Open the live demo</span>
+            </a>
+            <a class="btn btn-ghost" data-link="repo" href="https://github.com/harryanthonymartillano-ops/Bayan-Ledger" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <span>View the repository</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- HERO GRAPHIC / STAKEHOLDER DISTRIBUTION -->
+        <figure class="groups" aria-labelledby="groups-cap">
+          <figcaption id="groups-cap">
+            <strong>429 Evaluators in Sta. Cruz, Laguna</strong> participated in the comprehensive system evaluation across nine ISO/IEC 25010 software quality characteristics, affirming the system's operational readiness.
+          </figcaption>
+          <div class="bar" role="img" aria-label="Stakeholder evaluator distribution: Citizens 93.01 percent, MISO Personnel 2.10 percent, MPDO Personnel 1.86 percent, Budget and Treasury Personnel 3.03 percent">
+            <span class="seg g1" style="--w:93.01"></span>
+            <span class="seg g2" style="--w:2.10"></span>
+            <span class="seg g3" style="--w:1.86"></span>
+            <span class="seg g4" style="--w:3.03"></span>
+          </div>
+          <ul class="group-key">
+            <li><i class="dot g1"></i><span><b>Citizens / Public Oversight</b><br>399 respondents, 93.0%</span></li>
+            <li><i class="dot g2"></i><span><b>MISO / System Administration</b><br>9 personnel, 2.1%</span></li>
+            <li><i class="dot g3"></i><span><b>MPDO / Project Verification</b><br>8 personnel, 1.9%</span></li>
+            <li><i class="dot g4"></i><span><b>Budget & Treasury / Disbursements</b><br>13 personnel, 3.0%</span></li>
+          </ul>
+          <div class="hero-stats-badge">
+            <span>Overall Software Quality Mean: <strong>4.55 / 5.00 (Strongly Agree)</strong></span>
+            <span>Functional Testing: <strong>225 / 225 Passed (100%)</strong></span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- OVERVIEW SECTION -->
+    <section class="section" id="overview">
+      <div class="wrap narrow-grid">
+        <div>
+          <h2>What BayanLedger does</h2>
+          <div class="sdg-row">
+            <span class="sdg-badge sdg-16">SDG 16: Strong Institutions</span>
+            <span class="sdg-badge sdg-11">SDG 11: Sustainable Cities</span>
+            <span class="sdg-badge sdg-9">SDG 9: Industry & Innovation</span>
+          </div>
+        </div>
+        <div class="prose">
+          <p>Local government units in the Philippines operate under Republic Act No. 7160 (Local Government Code of 1991), which mandates participatory budgeting and public consultation for community infrastructure. However, in frontline municipal bodies such as the Municipal Planning and Development Office (MPDO) of Sta. Cruz, Laguna, project tracking and budget allocations have historically relied on manual, paper-based records. This manual structure often leads to unmonitored fund allocations, transcription delays, low citizen awareness, and susceptibility to data modification.</p>
+          <p>BayanLedger transforms this workflow by combining a responsive municipal management dashboard with an immutable <strong>Ethereum Sepolia blockchain ledger</strong>. Critical governance events—project initialization, milestone proof verification, Special Allotment Release Orders (SARO), and Notices of Cash Allocation (NCA)—are recorded on-chain, establishing an inspectable, tamper-evident audit trail for both government officials and the general public.</p>
+          <p>To eliminate unauthorized fund releases and single-point failures, the platform implements a strict <strong>multi-gate authorization workflow</strong>:</p>
+          <ul>
+            <li><strong>MPDC (Municipal Planning & Development Coordinator):</strong> Registers infrastructure projects, sets milestones, uploads progress proofs, and verifies physical accomplishments.</li>
+            <li><strong>Budget Officer (Gate 1 Review):</strong> Classifies funds, validates project alignment with the 20% Municipal Development Fund, and registers the SARO reference.</li>
+            <li><strong>Municipal Treasurer (Gate 2 Disbursement):</strong> Performs final payment authorization, issues the NCA reference, and commits the disbursement transaction to the blockchain.</li>
+            <li><strong>Citizens & Public:</strong> Freely inspect real-time project statuses, verify cryptographic transaction receipts, track fund utilization, and submit community proposals or reports.</li>
+          </ul>
+          <div class="note">
+            <strong>Scope & Simulation Notice.</strong> BayanLedger is an academic capstone prototype developed and evaluated for the MPDO of Sta. Cruz, Laguna. Smart contract executions and fund releases are tested and simulated on the Ethereum Sepolia Testnet. The platform provides verifiable cryptographic accounting and decision-support without executing direct physical fiat transfers from official municipal bank repositories.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="section tint" id="team">
+      <div class="wrap">
+        <h2>Research team and adviser</h2>
+        <div class="team-grid">
+          <article class="person">
+            <h3>Jazaira M. Alias</h3>
+            <p>Researcher<br>BS Information Technology</p>
+          </article>
+          <article class="person">
+            <h3>Harry Anthony A. Martillano</h3>
+            <p>Researcher<br>BS Information Technology</p>
+          </article>
+          <article class="person">
+            <h3>Arianna C. Surbano</h3>
+            <p>Researcher<br>BS Information Technology</p>
+          </article>
+          <article class="person adviser">
+            <h3>Mia V. Villarica, DIT</h3>
+            <p>Thesis Adviser & Associate Dean<br>College of Computer Studies</p>
+          </article>
+        </div>
+
+        <ul class="expert-list" aria-label="Technical contributors and review committee">
+          <li><strong>Mark P. Bernardino, MSCS</strong>System Expert</li>
+          <li><strong>Gener F. Mosico, MSIT</strong>Technical Editor</li>
+          <li><strong>Jhon Jhon P. Zotomayor</strong>Language Critic</li>
+          <li><strong>Rachiel R. Rivano, PhD</strong>Data Analyst</li>
+        </ul>
+
+        <p class="fine" style="margin-top: 2rem;">
+          College of Computer Studies, Laguna State Polytechnic University, Santa Cruz Main Campus, Santa Cruz, Laguna, Philippines. Submitted September 2026 in partial fulfillment of the requirements for the degree of Bachelor of Science in Information Technology, major in Web and Mobile Application Development. With sincere appreciation to Engr. Rosalyn M. Gutierrez, EnP, the Municipal Planning and Development Office, and the participating citizens of Sta. Cruz, Laguna.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROBLEM STATEMENT SECTION -->
+    <section class="section" id="problem">
+      <div class="wrap narrow-grid">
+        <div>
+          <h2>Problem statement</h2>
+        </div>
+        <div class="prose">
+          <p>While the Philippine Department of Budget and Management (DBM) introduced national blockchain tokenization for budget documents in 2025, grassroots municipal offices remain constrained by manual procedures. Preliminary investigation, process observation, and key informant interviews with the MPDO of Sta. Cruz, Laguna revealed critical governance bottlenecks:</p>
+          <ul>
+            <li><strong>Lack of Real-Time Visibility:</strong> Budgets and expenditures are reconciled across fragmented paper documents, preventing timely detection of stalled or over-budget projects.</li>
+            <li><strong>Susceptibility to Data Modification:</strong> Physical files, spreadsheets, and manual ledgers lack cryptographic tamper detection, leaving records vulnerable to transcription error or unauthorized modification.</li>
+            <li><strong>Low Citizen Engagement:</strong> Residents lack an accessible, transparent medium to observe how participatory budgeting allocations are spent in their respective barangays.</li>
+            <li><strong>Traceability Deficits:</strong> The trail between citizen proposal submission, MPDO planning, Budget Officer review, and Treasury disbursement is frequently broken.</li>
+            <li><strong>Absence of Automated Anomaly Alerts:</strong> Delayed milestones or irregular budget reallocations cannot be flagged programmatically without exhaustive manual reviews.</li>
+          </ul>
+          <p>To address these challenges, the study investigated six fundamental research questions:</p>
+          <ol class="questions">
+            <li>What is the current operational workflow and status of budget monitoring and participatory governance in the MPDO of Sta. Cruz, Laguna?</li>
+            <li>What software architecture and blockchain modules are necessary to bridge the gap between municipal administrative workflows and public oversight?</li>
+            <li>How can smart contracts enforce multi-gate fund-release conditions based on verified milestone completion rather than arbitrary discretion?</li>
+            <li>How can cryptographic evidence (SHA-256 and IPFS) be integrated into a digital audit trail to detect database tampering in real time?</li>
+            <li>What is the functional performance of the system when evaluated across 225 rigorous technical test cases by IT and blockchain specialists?</li>
+            <li>To what degree do internal municipal personnel and local citizens accept the system in terms of the nine ISO/IEC 25010 software quality characteristics?</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBJECTIVES SECTION -->
+    <section class="section tint" id="objectives">
+      <div class="wrap narrow-grid">
+        <div>
+          <h2>Objectives</h2>
+        </div>
+        <div class="prose">
+          <p><strong>General Objective.</strong> To design, develop, test, and evaluate BayanLedger—a decentralized budget monitoring and participatory governance system tailored for the Municipal Planning and Development Office of Sta. Cruz, Laguna—using blockchain technology to resolve the absence of real-time visibility, insufficient fund monitoring, low citizen involvement, and vulnerability to data alteration, establishing a viable and replicable governance prototype for Philippine local government units.</p>
+          <p><strong>Specific Objectives.</strong></p>
+          <ul class="objectives">
+            <li><strong>Design and develop the seven core system modules:</strong> Real-Time Budget Transparency Dashboard, Tamper-Proof Blockchain Ledger, Smart Contract Auto-Release System, Project Progress and Fund Tracker, Digital Audit Trail, Public Responsive Portal, and Transaction Alert Mechanism.</li>
+            <li><strong>Implement multi-gate cryptographic access control:</strong> Enforce strict role segregation (Admin, MPDC, Budget Officer, Treasurer, Citizen) using JWT tokens and on-chain Solidity role bindings.</li>
+            <li><strong>Anchor milestones and document evidence:</strong> Hash all milestone accomplishment photos and compliance attachments using SHA-256 and IPFS to guarantee permanent verifiability.</li>
+            <li><strong>Determine functional performance:</strong> Conduct comprehensive functional testing across budget tracking, project tracking, transaction logging, blockchain verification, smart contract execution, audit trails, and role-based access.</li>
+            <li><strong>Evaluate software product quality:</strong> Measure user acceptability and software quality according to the ISO/IEC 25010 standard across Functional Suitability, Performance Efficiency, Compatibility, Interaction Capability, Reliability, Security, Maintainability, Flexibility, and Safety.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHODOLOGY SECTION -->
+    <section class="section" id="methodology">
+      <div class="wrap">
+        <h2>Methodology</h2>
+
+        <div class="narrow-grid sub">
+          <div><h3>Research design and data</h3></div>
+          <div class="prose">
+            <p>The study employed a <strong>descriptive-developmental mixed-methods research design</strong>. Qualitative data from initial workflow observations, key informant interviews with MPDO leadership (Engr. Rosalyn M. Gutierrez, EnP), and review of the municipal Citizen's Charter guided requirement gathering. Quantitative data from black-box test executions and structured ISO/IEC 25010 evaluation surveys provided measurable outcomes.</p>
+            <p>The evaluation sample comprised <strong>429 respondents</strong> in Sta. Cruz, Laguna: 399 citizens from local barangays and 30 internal municipal personnel (5 Budgeting, 8 Treasury, 8 MPDO, and 9 MISO staff), ensuring comprehensive feedback from both administrative operators and public beneficiaries.</p>
+          </div>
+        </div>
+
+        <div class="narrow-grid sub">
+          <div><h3>Rapid Application Development (RAD)</h3></div>
+          <div class="prose">
+            <p>Development followed the four phases of the Rapid Application Development (RAD) life cycle, emphasizing continuous user validation and iterative prototype refinement:</p>
+            <ol class="phases">
+              <li><b>Requirements Planning.</b> Identifying municipal process bottlenecks, Citizen's Charter procedures, COA compliance requirements, and blockchain integration opportunities.</li>
+              <li><b>User Design & Prototyping.</b> Constructing system architecture, database entity-relationship models (ERD), use case diagrams, and responsive wireframes reviewed by system experts.</li>
+              <li><b>Construction & Implementation.</b> Full-stack development integrating the smart contract layer, Node.js backend services, Supabase PostgreSQL database, and React frontend.</li>
+              <li><b>Cutover, Testing & Evaluation.</b> Executing 225 functional test cases across 15 IT experts and gathering standardized user acceptance evaluations from 429 stakeholders.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="narrow-grid sub">
+          <div><h3>System architecture & tech stack</h3></div>
+          <div class="prose">
+            <p>BayanLedger separates high-frequency application workflows from immutable on-chain audit trails, balancing rapid UI responsiveness with cryptographic permanence:</p>
+            <dl class="stack">
+              <div><dt>Smart Contracts & Web3</dt><dd>Solidity <code>^0.8.20</code> (<code>StaCruzChain.sol</code>), Hardhat, Ethereum Sepolia Testnet, Ethers.js v5</dd></div>
+              <div><dt>Web Portal & Frontend</dt><dd>React 19, TypeScript, Vite, Tailwind CSS v4, Lucide React, Recharts</dd></div>
+              <div><dt>Backend API Services</dt><dd>Node.js, Express, TypeScript (<code>tsx</code>), JWT Role-Based Authentication, Multer</dd></div>
+              <div><dt>Database & Storage</dt><dd>PostgreSQL (Supabase), SHA-256 Evidence Hashing, IPFS Pinning</dd></div>
+              <div><dt>GIS & Notifications</dt><dd>Leaflet with OpenStreetMap tiles, Firebase Cloud Messaging (FCM)</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="narrow-grid sub">
+          <div><h3>Quality evaluation framework</h3></div>
+          <div class="prose">
+            <p>Technical performance was verified using a 225-item black-box test suite evaluated by 15 IT and blockchain specialists. User acceptability was assessed using a five-point Likert scale instrument aligned with the nine product quality characteristics of the <strong>ISO/IEC 25010</strong> software engineering model.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEM FEATURES & SCREENSHOTS SECTION -->
+    <section class="section dark" id="system">
+      <div class="wrap">
+        <h2>System features and screenshots</h2>
+        <p class="lede">Explore the core modules of the BayanLedger platform. Select any interface screenshot to view the high-resolution capture in the lightbox viewer.</p>
+
+        <ul class="features">
+          <li><b>Real-Time Budget Transparency Dashboard.</b> Live capital outlay tracking, 20% Development Fund allocation, disbursement burn rates, and project stage distributions.</li>
+          <li><b>Tamper-Proof Blockchain Ledger.</b> Immutable on-chain Sepolia ledger committing transaction hashes, block numbers, wallet signatures, and SARO/NCA certifications.</li>
+          <li><b>Multi-Gate Smart Contract Auto-Release.</b> Sequential approval gatekeeper requiring MPDC physical verification, Budget Officer endorsement, and Treasury disbursement.</li>
+          <li><b>Project Progress & Milestone Tracker.</b> Percentage-based milestone completion (25%, 50%, 75%, 100%) paired with contractor proof-of-work uploads and inspection logs.</li>
+          <li><b>Cryptographic Digital Audit Trail.</b> Real-time tamper detection engine comparing live database records against on-chain block hashes to instantly detect unauthorized changes.</li>
+          <li><b>Public Citizen Monitoring Portal.</b> Citizen-facing interface allowing residents to browse active public projects, inspect expenditures, and submit community proposals.</li>
+          <li><b>Automated Transaction Alert System.</b> Algorithmic monitor flagging irregular transaction spikes, budget overruns, milestone delays, and hash mismatches.</li>
+          <li><b>Role-Based Access Control (RBAC).</b> Cryptographic permission enforcement for Admin, MPDC, Budget Officer, and Municipal Treasurer accounts.</li>
+        </ul>
+
+        <div class="shots">
+          <!-- SHOT 1: Dashboard -->
+          <figure class="shot">
+            <button class="shot-btn" data-full="assets/img/dashboard.webp" data-alt="Real-Time Budget Transparency Dashboard" data-caption="Figure 9. Real-Time Budget Transparency Dashboard: Displays municipal budget allocations, expenditures, milestone completion rates, and project pipeline status." aria-label="Enlarge the dashboard screenshot">
+              <img src="assets/img/dashboard-sm.webp" width="960" height="458" loading="lazy" alt="BayanLedger Real-Time Budget Transparency Dashboard displaying municipal budget allocations, fund utilization metrics, milestone graphs, and active projects.">
+            </button>
+            <figcaption>
+              <span class="shot-badge">Executive Overview</span>
+              <h3>Real-Time Budget Transparency Dashboard</h3>
+              <p>Provides municipal executives and planners with a real-time overview of infrastructure budgets, allocated capital, disbursed sums, and project completion rates. Financial summaries reflect both off-chain database updates and verified Sepolia blockchain events.</p>
+            </figcaption>
+          </figure>
+
+          <!-- SHOT 2: Ledger -->
+          <figure class="shot">
+            <button class="shot-btn" data-full="assets/img/ledger.webp" data-alt="Tamper-Proof Blockchain Budget Ledger" data-caption="Figure 10. Tamper-Proof Budget Ledger: Records budget transactions, cryptographic transaction hashes, sender addresses, and Sepolia block confirmations." aria-label="Enlarge the budget ledger screenshot">
+              <img src="assets/img/ledger-sm.webp" width="960" height="458" loading="lazy" alt="BayanLedger Tamper-Proof Blockchain Budget Ledger showing transaction hashes, block heights, SARO identifiers, and verification status.">
+            </button>
+            <figcaption>
+              <span class="shot-badge">Blockchain Integration</span>
+              <h3>Tamper-Proof Budget Ledger</h3>
+              <p>Displays all municipal expenditure transactions anchored onto the Ethereum Sepolia testnet. Each transaction contains a cryptographic transaction hash, block number, authorizing wallet address, and timestamp, guaranteeing that recorded budget allotments cannot be secretly modified or deleted.</p>
+            </figcaption>
+          </figure>
+
+          <!-- SHOT 3: Milestone Tracker -->
+          <figure class="shot">
+            <button class="shot-btn" data-full="assets/img/milestone.webp" data-alt="Project Progress and Milestone Verification" data-caption="Figure 11. Project Progress Milestone Verification: MPDC inspection checklist, photographic evidence validation, and milestone disbursement authorization." aria-label="Enlarge the milestone verification screenshot">
+              <img src="assets/img/milestone-sm.webp" width="960" height="454" loading="lazy" alt="BayanLedger Project Progress Milestone Verification showing deliverables checklist, proof photos, and progress percentage.">
+            </button>
+            <figcaption>
+              <span class="shot-badge">Proof of Accomplishment</span>
+              <h3>Milestone Progress & Deliverables Verification</h3>
+              <p>Municipal planning officers verify physical project deliverables before financial disbursements are unlocked. Contractor milestone photos and accomplishment reports are hashed with SHA-256 and stored on IPFS to prevent fraudulent or premature fund releases.</p>
+            </figcaption>
+          </figure>
+
+          <!-- SHOT 4: Audit Trail -->
+          <figure class="shot">
+            <button class="shot-btn" data-full="assets/img/audit-trail.webp" data-alt="Cryptographic Digital Audit Trail" data-caption="Figure 12. Digital Audit Trail: Immutable activity log capturing user actions, transaction timestamps, and tamper detection verification states." aria-label="Enlarge the digital audit trail screenshot">
+              <img src="assets/img/audit-trail-sm.webp" width="960" height="460" loading="lazy" alt="BayanLedger Digital Audit Trail table showing timestamped user actions, entity modifications, and blockchain integrity statuses.">
+            </button>
+            <figcaption>
+              <span class="shot-badge">Compliance & Accountability</span>
+              <h3>Digital Audit Trail & Tamper Detection</h3>
+              <p>Records all system activities, permission changes, and transaction submissions. The background tamper detection service regularly validates database hashes against on-chain block data, instantly alerting administrators if any record exhibits discrepancies.</p>
+            </figcaption>
+          </figure>
+
+          <!-- SHOT 5: Citizen Portal -->
+          <figure class="shot">
+            <button class="shot-btn" data-full="assets/img/citizen-portal.webp" data-alt="Public Citizen Monitoring Interface" data-caption="Figure 13. Citizen Monitoring Interface: Public project browser, funding source details, barangay filters, and community feedback module." aria-label="Enlarge the citizen portal screenshot">
+              <img src="assets/img/citizen-portal-sm.webp" width="960" height="459" loading="lazy" alt="BayanLedger Citizen Monitoring Interface with project search, barangay filters, budget breakdown, and community proposal submission form.">
+            </button>
+            <figcaption>
+              <span class="shot-badge">Citizen Engagement</span>
+              <h3>Citizen Monitoring & Public Portal</h3>
+              <p>Provides residents of Sta. Cruz, Laguna with mobile-responsive access to public project statuses, allocated funds, contractor details, and milestone images. Citizens can submit project feedback, report anomalies, or suggest community development proposals directly to the MPDO.</p>
+            </figcaption>
+          </figure>
+
+          <!-- SHOT 6: Alerts -->
+          <figure class="shot">
+            <button class="shot-btn" data-full="assets/img/alerts.webp" data-alt="System Alerts and Irregularity Monitoring" data-caption="Figure 14. Alert and Notification Interface: Real-time alert notifications for unusual transactions, schedule delays, and budget overrun warnings." aria-label="Enlarge the system alerts screenshot">
+              <img src="assets/img/alerts-sm.webp" width="960" height="511" loading="lazy" alt="BayanLedger Alert and Notification Interface displaying high, medium, and low priority system alerts and transaction warnings.">
+            </button>
+            <figcaption>
+              <span class="shot-badge">Anomaly Detection</span>
+              <h3>Transaction Alerts & Irregularity Notification</h3>
+              <p>Monitors system events in real time to detect irregular budget adjustments, milestone delays, and unauthorized access attempts. Automated alerts are dispatched to relevant municipal officers to enable immediate inquiry and remediation.</p>
+            </figcaption>
+          </figure>
+
+          <!-- SHOT 7: Login -->
+          <figure class="shot">
+            <button class="shot-btn" data-full="assets/img/login.webp" data-alt="Official Authentication & Sign-in" data-caption="Figure 8. BayanLedger Login Interface: Secure role-based portal access with JWT authentication and Web3 wallet address association." aria-label="Enlarge the login interface screenshot">
+              <img src="assets/img/login-sm.webp" width="960" height="460" loading="lazy" alt="BayanLedger Sign-in Portal showing user authentication fields and municipal governance credentials.">
+            </button>
+            <figcaption>
+              <span class="shot-badge">Security & Access Control</span>
+              <h3>Role-Based Authentication & Portal Access</h3>
+              <p>Ensures that only authorized municipal personnel can access administrative modules. Role assignments (Admin, MPDC, Budget Officer, Treasurer) are verified through JWT authentication and mapped directly to Ethereum wallet addresses for on-chain signing.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS SECTION -->
+    <section class="section" id="results">
+      <div class="wrap">
+        <h2>Results and discussion</h2>
+        <p class="lede">Empirical findings from 429 stakeholder evaluations and 225 technical test cases conducted for BayanLedger in Sta. Cruz, Laguna.</p>
+
+        <!-- TABLE 1: ISO 25010 EVALUATION -->
+        <h3 style="margin-top: 2.5rem;">User acceptance evaluation (ISO/IEC 25010)</h3>
+        <p class="fine">Evaluated by 429 respondents (399 citizens and 30 municipal personnel across the Budgeting, Treasury, MPDO, and MISO offices) using a 5-point Likert scale.</p>
+        <div class="table-wrap">
+          <table>
+            <caption class="sr">Summary of System Quality Evaluation by ISO/IEC 25010 Criterion</caption>
+            <thead>
+              <tr>
+                <th scope="col">Quality Characteristic</th>
+                <th scope="col">Items</th>
+                <th scope="col">Respondents</th>
+                <th scope="col">Mean</th>
+                <th scope="col">Interpretation</th>
+                <th scope="col">Rank</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Interaction Capability</th>
+                <td>3</td>
+                <td>429</td>
+                <td>4.58</td>
+                <td>Strongly Agree</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">Security</th>
+                <td>3</td>
+                <td>429</td>
+                <td>4.56</td>
+                <td>Strongly Agree</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">Functional Suitability</th>
+                <td>3</td>
+                <td>429</td>
+                <td>4.56</td>
+                <td>Strongly Agree</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th scope="row">Reliability</th>
+                <td>3</td>
+                <td>429</td>
+                <td>4.55</td>
+                <td>Strongly Agree</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">Compatibility</th>
+                <td>3</td>
+                <td>429</td>
+                <td>4.55</td>
+                <td>Strongly Agree</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <th scope="row">Safety</th>
+                <td>3</td>
+                <td>429</td>
+                <td>4.55</td>
+                <td>Strongly Agree</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <th scope="row">Flexibility</th>
+                <td>3</td>
+                <td>429</td>
+                <td>4.54</td>
+                <td>Strongly Agree</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <th scope="row">Maintainability</th>
+                <td>3</td>
+                <td>429</td>
+                <td>4.53</td>
+                <td>Strongly Agree</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <th scope="row">Performance Efficiency</th>
+                <td>3</td>
+                <td>429</td>
+                <td>4.52</td>
+                <td>Strongly Agree</td>
+                <td>9</td>
+              </tr>
+              <tr class="table-highlight">
+                <th scope="row">Overall Weighted Mean</th>
+                <td>27</td>
+                <td>429</td>
+                <td>4.55</td>
+                <td>Strongly Agree</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- TABLE 2: FUNCTIONAL TESTING SUMMARY -->
+        <h3 style="margin-top: 3rem;">Technical system testing summary</h3>
+        <p class="fine">Evaluated across 15 IT and blockchain specialists performing black-box test executions across all functional modules.</p>
+        <div class="table-wrap">
+          <table>
+            <caption class="sr">Summary of System Testing Results</caption>
+            <thead>
+              <tr>
+                <th scope="col">Testing Category</th>
+                <th scope="col">Test Cases</th>
+                <th scope="col">Passed</th>
+                <th scope="col">Failed</th>
+                <th scope="col">Status</th>
+                <th scope="col">Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Authentication & Role-Based Access Control</th>
+                <td>45</td>
+                <td>45</td>
+                <td>0</td>
+                <td><span class="badge-pass">Pass</span></td>
+                <td>Login security, route protection, and wallet linkage validated.</td>
+              </tr>
+              <tr>
+                <th scope="row">Project & Budget Allocation Workflows</th>
+                <td>45</td>
+                <td>45</td>
+                <td>0</td>
+                <td><span class="badge-pass">Pass</span></td>
+                <td>Database and Web3 ledger binding executed without computation errors.</td>
+              </tr>
+              <tr>
+                <th scope="row">Blockchain Transactions & Smart Contracts</th>
+                <td>45</td>
+                <td>45</td>
+                <td>0</td>
+                <td><span class="badge-pass">Pass</span></td>
+                <td>Multi-gate release conditions and database tamper detection verified 100%.</td>
+              </tr>
+              <tr>
+                <th scope="row">Dashboard Updates & Anomaly Alerts</th>
+                <td>45</td>
+                <td>45</td>
+                <td>0</td>
+                <td><span class="badge-pass">Pass</span></td>
+                <td>Real-time synchronization, over-budget warnings, and audit logs confirmed.</td>
+              </tr>
+              <tr>
+                <th scope="row">Citizen Monitoring & Public Portal</th>
+                <td>45</td>
+                <td>45</td>
+                <td>0</td>
+                <td><span class="badge-pass">Pass</span></td>
+                <td>Live project retrieval, proposal submission, and issue reporting functioned as intended.</td>
+              </tr>
+              <tr class="table-highlight">
+                <th scope="row">Total / Overall Success Rate</th>
+                <td>225</td>
+                <td>225</td>
+                <td>0</td>
+                <td><span class="badge-pass">100% Pass</span></td>
+                <td>100% overall success rate across all 15 expert evaluations.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="prose wide">
+          <p>The statistical evaluation produced an <strong>overall weighted mean of 4.55 (Strongly Agree)</strong> across all 429 respondents. <strong>Interaction Capability</strong> achieved the highest rating (4.58), with its highest-scoring individual indicator being <em>"The developed system is easy to learn and use"</em> (4.59). This proves that intricate blockchain processes—frequently perceived as overly technical—can be presented through an intuitive interface that both local government personnel and everyday citizens can navigate confidently.</p>
+          <p><strong>Security (4.56)</strong> and <strong>Functional Suitability (4.56)</strong> followed closely, validating the effectiveness of the multi-gate smart contract logic, cryptographic hashing, and role-based permissions. Coupled with a 100% functional test pass rate (225/225 test cases), the findings substantiate that BayanLedger serves as an effective, auditable, and replicable e-governance framework for Philippine local government units.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINKS SECTION -->
+    <section class="section tint" id="links">
+      <div class="wrap">
+        <h2>Links and project deliverables</h2>
+        <p class="lede">Access the live system, complete source code repository, deployed smart contracts, and official thesis documentation.</p>
+
+        <ul class="link-list">
+          <li>
+            <a class="link-row" data-link="live" href="https://harryanthonymartillano-ops.github.io/Bayan-Ledger/" target="_blank" rel="noopener noreferrer">
+              <span class="link-name">Live system demo</span>
+              <span class="link-desc">Explore the BayanLedger public portal and transparency dashboard.</span>
+              <span class="link-url" data-url-text>Live Portal</span>
+            </a>
+          </li>
+          <li>
+            <a class="link-row" data-link="repo" href="https://github.com/harryanthonymartillano-ops/Bayan-Ledger" target="_blank" rel="noopener noreferrer">
+              <span class="link-name">Source repository</span>
+              <span class="link-desc">Frontend, backend API, smart contracts, and setup instructions on GitHub (shared with teamccs-git).</span>
+              <span class="link-url" data-url-text>github.com/harryanthonymartillano-ops/Bayan-Ledger</span>
+            </a>
+          </li>
+          <li>
+            <a class="link-row" data-link="contract" href="https://sepolia.etherscan.io/address/0x4db67F3D46D212895484C24A54c5b10cA07b61F5" target="_blank" rel="noopener noreferrer">
+              <span class="link-name">Smart contract explorer</span>
+              <span class="link-desc">Inspect verified BayanLedger contract bytecode, transactions, and events on Ethereum Sepolia Etherscan.</span>
+              <span class="link-url" data-url-text>0x4db67F3D46D212895484C24A54c5b10cA07b61F5</span>
+            </a>
+          </li>
+          <li>
+            <a class="link-row" data-link="manuscript" href="https://docs.google.com/document/d/1ALUvDGA1UoQQPsH9fSCpFLGS6jcvA9Lg/edit#heading=h.6jmpc0u2mg27" target="_blank" rel="noopener noreferrer">
+              <span class="link-name">Thesis manuscript</span>
+              <span class="link-desc">Full capstone research paper, system diagrams, and evaluation chapters on Google Docs.</span>
+              <span class="link-url" data-url-text>Google Docs Manuscript</span>
+            </a>
+          </li>
+          <li>
+            <a class="link-row" data-link="video" href="#links">
+              <span class="link-name">Walkthrough video</span>
+              <span class="link-desc">Demonstration video showing multi-gate milestone verification and citizen proposal workflows.</span>
+              <span class="link-url" data-url-text>Link not set yet</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Submission Compliance Card as requested by CCS Poster -->
+        <div class="submission-card">
+          <div class="submission-card-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div>
+            <h3>College of Computer Studies Submission Compliance</h3>
+            <p>This repository website fulfills the <strong>LSPU CCS Research Repository Submission Requirement</strong>, incorporating the complete manuscript, system diagrams, verified source code, feature screenshots, and setup documentation. The GitHub repository is shared with <code>teamccs-git</code>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div>
+        <strong>BayanLedger</strong>
+        <p>College of Computer Studies<br>Laguna State Polytechnic University, Santa Cruz Main Campus<br>Santa Cruz, Laguna, Philippines</p>
+      </div>
+      <div>
+        <p class="fine">A decentralized municipal budget monitoring and participatory governance research prototype designed for the Municipal Planning and Development Office (MPDO) of Sta. Cruz, Laguna. Developed under the Bachelor of Science in Information Technology program.</p>
+        <p class="fine" style="margin-top: .75rem;">© 2026 BayanLedger Research Proponents. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCREENSHOT LIGHTBOX MODAL DIALOG -->
+  <dialog id="lightbox" aria-label="Screenshot lightbox modal">
+    <div class="lb-bar">
+      <span id="lb-caption">Screenshot preview</span>
+      <form method="dialog" style="margin: 0;">
+        <button class="lb-close" aria-label="Close screenshot viewer">Close</button>
+      </form>
+    </div>
+    <img id="lb-img" alt="Enlarged screenshot capture">
+  </dialog>
+
+  <!-- SCRIPTS -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
