@@ -67,7 +67,7 @@
 
   // 3. Highlight active nav link on scroll
   var sections = document.querySelectorAll("section[id], header[id]");
-  var navLinks = document.querySelectorAll(".nav a[href^='#']");
+  var navLinks = document.querySelectorAll(".nav-links-wrap a[href^='#'], .nav a[href^='#'], a.nav-item");
 
   function onScroll() {
     var scrollPos = window.scrollY + 120;
