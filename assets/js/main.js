@@ -27,31 +27,21 @@
     }
   });
 
-  // 2. Screenshot lightbox modal viewer (styled like reference photo)
+  // 2. Screenshot lightbox modal viewer (1 view image only, no label)
   var box = document.getElementById("lightbox");
   var img = document.getElementById("lb-img");
-  var caption = document.getElementById("lb-caption");
-  var counter = document.getElementById("lb-counter");
   var closeBtn = document.getElementById("lb-close");
 
   if (box && typeof box.showModal === "function") {
     var buttons = Array.from(document.querySelectorAll(".shot-btn"));
-    buttons.forEach(function (btn, index) {
+    buttons.forEach(function (btn) {
       btn.addEventListener("click", function () {
         var fullSrc = btn.getAttribute("data-full");
-        var altText = btn.getAttribute("data-alt") || "";
-        var titleText = btn.getAttribute("data-title") || btn.getAttribute("data-caption") || altText;
-        var countText = btn.getAttribute("data-counter") || (index + 1) + " / " + buttons.length;
+        var altText = btn.getAttribute("data-alt") || "Enlarged screenshot capture";
 
         if (img) {
           img.src = fullSrc;
           img.alt = altText;
-        }
-        if (caption) {
-          caption.textContent = titleText;
-        }
-        if (counter) {
-          counter.textContent = countText;
         }
         box.showModal();
       });
@@ -64,14 +54,14 @@
       });
     }
 
-    // Close when clicking outside content (on the dialog backdrop)
+    // Close when clicking outside image (on dialog backdrop or stage)
     box.addEventListener("click", function (e) {
-      if (e.target === box) {
+      if (e.target === box || (e.target && e.target.classList && e.target.classList.contains("lb-stage"))) {
         box.close();
       }
     });
 
-    // Clean up on close
+    // Clean up src on close so no placeholder or ghost image remains
     box.addEventListener("close", function () {
       if (img) {
         img.removeAttribute("src");
