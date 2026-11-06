@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BayanLedger | Municipal Budget Transparency & Governance Platform</title>
-  <meta name="description" content="BayanLedger is a decentralized budget monitoring and participatory governance platform tailored for the Municipal Planning and Development Office (MPDO) of Sta. Cruz, Laguna. An undergraduate capstone project from Laguna State Polytechnic University (LSPU CCS).">
-  <meta name="theme-color" content="#091326">
+  <title>BayanLedger — Research Repository & Submission Website | LSPU CCS</title>
+  <meta name="description" content="Official GitHub Pages submission website for BayanLedger: Decentralized Budget Monitoring and Participatory Governance System for the Municipal Planning and Development Office (MPDO) of Sta. Cruz, Laguna. College of Computer Studies, Laguna State Polytechnic University.">
+  <meta name="theme-color" content="#060b16">
 
   <!-- Open Graph Metadata -->
-  <meta property="og:title" content="BayanLedger: Municipal Budget Transparency Platform">
-  <meta property="og:description" content="Decentralized budget monitoring, multi-gate fund release verification, and citizen oversight for the Municipality of Sta. Cruz, Laguna.">
+  <meta property="og:title" content="BayanLedger — Research Repository Submission">
+  <meta property="og:description" content="Decentralized municipal budget monitoring, multi-gate fund release verification, and citizen oversight for the Municipality of Sta. Cruz, Laguna.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/img/dashboard.webp">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/img/logo-bayanledger.png">
 
-  <!-- Google Fonts: Plus Jakarta Sans -->
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -27,567 +27,571 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- TOP INSTITUTIONAL BAR -->
-  <div class="top-bar">
-    <div class="container top-bar-inner">
-      <div class="top-bar-badge">
-        <span class="top-bar-pulse" aria-hidden="true"></span>
-        <span>Laguna State Polytechnic University • College of Computer Studies • Capstone Research</span>
-      </div>
-      <div>
-        <span>Ethereum Sepolia Testnet Contract: <strong style="color: #60a5fa;">0x4db6...61F5</strong></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- SITE HEADER & STICKY NAVIGATION -->
-  <header class="site-header" id="top">
-    <div class="container header-row">
-      <a class="brand" href="#top" aria-label="BayanLedger Home">
-        <img src="assets/img/logo-bayanledger.png" alt="BayanLedger Emblem" class="brand-emblem" width="38" height="38">
-        <div class="brand-titles">
-          <span class="brand-name">Bayan<span>Ledger</span></span>
-          <span class="brand-sub">Sta. Cruz, Laguna • MPDO</span>
+  <!-- POSTER INSTITUTIONAL HEADER (Dark Mode University & College Branding) -->
+  <header class="poster-header">
+    <div class="container header-top-grid">
+      <a class="brand-institutional" href="#top" aria-label="Laguna State Polytechnic University - College of Computer Studies">
+        <div class="seal-badge">
+          <img src="assets/img/logo-bayanledger.png" alt="BayanLedger Emblem" width="54" height="54">
+        </div>
+        <div class="institution-text">
+          <span class="institution-name">LAGUNA STATE POLYTECHNIC UNIVERSITY</span>
+          <span class="college-name">COLLEGE OF COMPUTER STUDIES</span>
+          <span class="program-tag">BS Information Technology • Capstone Research Submission</span>
         </div>
       </a>
-      <nav class="site-nav" aria-label="Main Navigation">
-        <a class="nav-link" href="#workflow">Workflow</a>
-        <a class="nav-link" href="#problem">Problem & Objectives</a>
-        <a class="nav-link" href="#methodology">Methodology</a>
-        <a class="nav-link" href="#system">Modules</a>
-        <a class="nav-link" href="#results">Results</a>
-        <a class="nav-link" href="#team">Team</a>
-        <a class="nav-link" href="#deliverables">Deliverables</a>
-        <a class="nav-btn" data-link="live" href="https://bayan-ledger.vercel.app/" target="_blank" rel="noopener noreferrer">Launch App ↗</a>
-      </nav>
+
+      <!-- Geometric Poster Stripes (Gold, Navy, Crimson) -->
+      <div class="header-stripes" aria-hidden="true">
+        <div class="stripe stripe-gold"></div>
+        <div class="stripe stripe-navy"></div>
+        <div class="stripe stripe-crimson"></div>
+      </div>
     </div>
   </header>
 
+  <!-- STICKY NAVIGATION BAR -->
+  <nav class="site-nav-bar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-links-wrap" aria-label="Website Sections">
+        <a class="nav-item active" href="#overview">Overview</a>
+        <a class="nav-item" href="#requirements">Requirements</a>
+        <a class="nav-item" href="#team">Team & Contributions</a>
+        <a class="nav-item" href="#problem">Problem & Objectives</a>
+        <a class="nav-item" href="#methodology">Methodology & Diagrams</a>
+        <a class="nav-item" href="#system">Features & Screenshots</a>
+        <a class="nav-item" href="#results">Results</a>
+        <a class="nav-item" href="#links">Links & Setup</a>
+      </div>
+      <a class="nav-cta-btn" data-link="live" href="https://bayan-ledger.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <span>Launch System</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </nav>
+
   <main id="main">
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="hero-kicker-tag">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-            <span>BS Information Technology • Capstone 2026</span>
+    <!-- POSTER HERO BANNER -->
+    <section class="poster-hero" id="overview">
+      <div class="container hero-banner-grid">
+        <div class="hero-text-col">
+          <div class="banner-badge-group">
+            <div class="clipboard-icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+            </div>
+            <div class="banner-titles">
+              <span class="banner-main-title">Research Repository</span>
+              <span class="banner-sub-title">Submission Requirement</span>
+            </div>
           </div>
-          <h1 class="hero-title">
-            Decentralized Municipal Budget Monitoring & <span class="gradient-text">Participatory Governance</span>
-          </h1>
-          <p class="hero-lead">
-            BayanLedger bridges grassroots local governance and blockchain technology—anchoring public infrastructure milestones, budget allocations, and contractor disbursements onto the Ethereum Sepolia testnet for the Municipality of Sta. Cruz, Laguna.
+
+          <div class="hero-project-name">
+            Project: <span>BayanLedger</span>
+          </div>
+          <p class="hero-full-title">
+            <strong>BAYANLEDGER: DESIGN AND DEVELOPMENT OF A DECENTRALIZED BUDGET MONITORING AND PARTICIPATORY GOVERNANCE SYSTEM FOR THE MUNICIPAL PLANNING AND DEVELOPMENT OFFICE OF STA. CRUZ, LAGUNA</strong>
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" data-link="live" href="https://bayan-ledger.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <a class="btn btn-crimson" data-link="live" href="https://bayan-ledger.vercel.app/" target="_blank" rel="noopener noreferrer">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              <span>Explore Live Platform</span>
+              <span>Open Live System (Vercel)</span>
             </a>
-            <a class="btn btn-outline" data-link="repo" href="https://github.com/harryanthonymartillano-ops/Bayan-Ledger" target="_blank" rel="noopener noreferrer">
+            <a class="btn btn-primary" data-link="repo" href="https://github.com/harryanthonymartillano-ops/Bayan-Ledger" target="_blank" rel="noopener noreferrer">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
               <span>GitHub Repository</span>
             </a>
-            <a class="btn btn-ghost-dark" data-link="manuscript" href="https://docs.google.com/document/d/1ALUvDGA1UoQQPsH9fSCpFLGS6jcvA9Lg/edit#heading=h.6jmpc0u2mg27" target="_blank" rel="noopener noreferrer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-              <span>Manuscript</span>
+            <a class="btn btn-outline" data-link="contract" href="https://sepolia.etherscan.io/address/0x4db67F3D46D212895484C24A54c5b10cA07b61F5" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 7h10"/><path d="M7 12h10"/><path d="M7 17h10"/></svg>
+              <span>Sepolia Contract Explorer</span>
             </a>
           </div>
 
-          <div class="contract-bar">
-            <span>Sepolia Smart Contract:</span>
-            <code>0x4db67F3D46D212895484C24A54c5b10cA07b61F5</code>
-            <button class="copy-btn" id="copy-contract-btn" data-address="0x4db67F3D46D212895484C24A54c5b10cA07b61F5" aria-label="Copy smart contract address to clipboard">Copy</button>
+          <div class="teamccs-tag-banner">
+            <span>Repository shared with evaluation account:</span>
+            <span class="teamccs-badge">teamccs-git</span>
           </div>
         </div>
 
-        <!-- HERO DEVICE PREVIEW CARD -->
-        <div class="hero-device-card">
-          <div class="device-header">
-            <div class="device-dots" aria-hidden="true">
+        <!-- LAPTOP GRAPHIC PREVIEW CARD -->
+        <div class="laptop-mockup-card">
+          <div class="laptop-top-bar">
+            <div class="laptop-dots">
               <span></span><span></span><span></span>
             </div>
-            <div class="device-url-bar">bayan-ledger.vercel.app</div>
-            <div style="font-size: 0.75rem; color: #34d399; font-weight: 700;">● LIVE PORTAL</div>
+            <span class="laptop-title">https://bayan-ledger.vercel.app/</span>
+            <span style="font-size: 0.72rem; color: #10b981; font-weight: 800;">● SYSTEM ACTIVE</span>
           </div>
-          <div class="device-media-wrap shot-btn" data-full="assets/img/dashboard.webp" data-alt="BayanLedger Real-Time Dashboard" data-caption="Figure 9. Real-Time Budget Transparency Dashboard: Displays municipal budget allocations, expenditures, milestone completion rates, and project pipeline status." role="button" tabindex="0">
-            <img src="assets/img/dashboard-sm.webp" width="960" height="458" alt="BayanLedger Transparency Dashboard Interface Preview">
-            <div class="device-overlay">
-              <span class="device-overlay-badge">🔍 Click to Enlarge Preview</span>
+          <div class="laptop-img-wrap shot-btn" data-full="assets/img/dashboard.webp" data-alt="BayanLedger Live Interface Preview" data-caption="Figure 9. Real-Time Budget Transparency Dashboard: Displays municipal budget allocations, expenditures, milestone completion rates, and project pipeline status." role="button" tabindex="0">
+            <img src="assets/img/dashboard-sm.webp" width="960" height="458" alt="BayanLedger Transparency Dashboard Screenshot Preview">
+          </div>
+          <div class="laptop-footer-info">
+            <span>Evaluators: <strong>429 Respondents</strong></span>
+            <span>Testing: <strong>225 / 225 Passed</strong></span>
+            <span>Quality: <strong>4.55 / 5.00 Mean</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: THE TWO POSTER PILLARS -->
+    <section class="section" id="requirements">
+      <div class="container">
+        <div class="card-grid-2col">
+          <!-- PILLAR 1: REQUIRED SUBMISSION -->
+          <div class="poster-card">
+            <div class="card-navy-header">
+              <h3 class="card-navy-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>
+                <span>Required Submission</span>
+              </h3>
+              <span class="card-header-badge">Checklist Status</span>
+            </div>
+            <div class="card-body">
+              <ul class="poster-checklist">
+                <li>
+                  <div class="check-badge">✔</div>
+                  <div class="checklist-content">
+                    <strong>Latest Manuscript</strong>
+                    <p>In institutional defense and evaluation review; full manuscript ready for archival release upon defense sign-off.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="check-badge">✔</div>
+                  <div class="checklist-content">
+                    <strong>System Documentation / Diagrams</strong>
+                    <p>Multilayered system architecture, database structure ERD, and multi-sig process flowcharts.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="check-badge">✔</div>
+                  <div class="checklist-content">
+                    <strong>Complete Source Code</strong>
+                    <p>Organized and executable React 19 frontend, Express REST backend, and Solidity smart contracts.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="check-badge">✔</div>
+                  <div class="checklist-content">
+                    <strong>Screenshots</strong>
+                    <p>High-resolution captures of the 7 core modules with detailed captions and zoom-in viewer.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="check-badge">✔</div>
+                  <div class="checklist-content">
+                    <strong>User Manual / Setup Instructions</strong>
+                    <p>Comprehensive step-by-step installation, deployment checklist, and environment configuration.</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="device-stats-bar">
-            <div class="device-stat">
-              <div class="device-stat-val">429</div>
-              <div class="device-stat-label">Evaluators</div>
+
+          <!-- PILLAR 2: GITHUB PAGES WEBSITE REQUIREMENTS -->
+          <div class="poster-card">
+            <div class="card-navy-header">
+              <h3 class="card-navy-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                <span>GitHub Pages Website</span>
+              </h3>
+              <span class="card-header-badge">Poster Specification</span>
             </div>
-            <div class="device-stat">
-              <div class="device-stat-val">100%</div>
-              <div class="device-stat-label">Test Pass Rate</div>
-            </div>
-            <div class="device-stat">
-              <div class="device-stat-val">4.55 / 5</div>
-              <div class="device-stat-label">ISO 25010 Mean</div>
+            <div class="card-body">
+              <ul class="poster-checklist">
+                <li>
+                  <div class="check-badge">✔</div>
+                  <div class="checklist-content">
+                    <strong>Research title</strong>
+                    <p>Complete research title identifying the project context for the MPDO of Sta. Cruz, Laguna.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="check-badge">✔</div>
+                  <div class="checklist-content">
+                    <strong>Team members and adviser</strong>
+                    <p>Proponents labeled as Researcher with specific contributions, alongside Thesis Adviser Dr. Mia Villarica.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="check-badge">✔</div>
+                  <div class="checklist-content">
+                    <strong>Problem statement and objectives</strong>
+                    <p>Clear documentation of municipal budgeting challenges, 6 research questions, and specific goals.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="check-badge">✔</div>
+                  <div class="checklist-content">
+                    <strong>Methodology</strong>
+                    <p>Rapid Application Development (RAD) life cycle, tech stack specifications, and testing framework.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="check-badge">✔</div>
+                  <div class="checklist-content">
+                    <strong>System features and screenshots</strong>
+                    <p>Interactive showcase of the dashboard, ledger, milestone verification, and citizen portal.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="check-badge">✔</div>
+                  <div class="checklist-content">
+                    <strong>Links (repository, system, demo)</strong>
+                    <p>Direct links to the live Vercel app, GitHub repo (teamccs-git), and Sepolia contract explorer.</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 1: MULTI-GATE GOVERNANCE WORKFLOW -->
-    <section class="section" id="workflow">
+    <!-- SECTION 2: TEAM MEMBERS & CONTRIBUTIONS -->
+    <section class="section section-alt" id="team">
       <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Governance Architecture</span>
-          <h2 class="section-title">The Multi-Gate Chain of Truth</h2>
-          <p class="section-desc">BayanLedger enforces a strict 4-step separation of duties to prevent unauthorized releases, single-point manipulation, and delayed infrastructure projects.</p>
-        </div>
-
-        <div class="pipeline-grid">
-          <!-- GATE 1 -->
-          <div class="pipeline-card">
-            <div class="pipeline-step-badge step-1">01</div>
-            <div class="pipeline-officer" style="color: var(--mpdo-sky);">MPDO Planning</div>
-            <h3>Project Scoping & Inception</h3>
-            <p>Municipal planners encode project specifications, budget ceilings, target barangay locations, and physical milestone deliverables.</p>
-            <div class="pipeline-output-pill">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 7h10"/><path d="M7 12h10"/><path d="M7 17h10"/></svg>
-              <span>Output: Inception Hash</span>
-            </div>
+        <div class="poster-card">
+          <div class="card-navy-header">
+            <h3 class="card-navy-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span>Team Members and Adviser</span>
+            </h3>
+            <span class="card-header-badge">Role & Specific Contributions</span>
           </div>
+          <div class="card-body">
+            <div class="team-grid">
+              <!-- Researcher 1: Jazaira M. Alias -->
+              <div class="team-member-card">
+                <div class="member-top-row">
+                  <div class="member-avatar">JA</div>
+                  <div class="member-meta">
+                    <h4>Jazaira M. Alias</h4>
+                    <span class="member-role-badge">Researcher</span>
+                  </div>
+                </div>
+                <div class="contributions-box">
+                  <div class="contributions-heading">Specific Contributions</div>
+                  <ul class="contributions-list">
+                    <li>Led requirements analysis and operational process documentation for the MPDO.</li>
+                    <li>Designed the ISO/IEC 25010 software quality evaluation framework and survey instruments.</li>
+                    <li>Facilitated user acceptance testing (UAT) coordination with 429 municipal and citizen participants.</li>
+                    <li>Formulated research chapters, statistical interpretation, and compliance verification reporting.</li>
+                  </ul>
+                </div>
+              </div>
 
-          <!-- GATE 2 -->
-          <div class="pipeline-card">
-            <div class="pipeline-step-badge step-2">02</div>
-            <div class="pipeline-officer" style="color: var(--saro-amber);">Budget Office (MBO)</div>
-            <h3>SARO Obligation & Review</h3>
-            <p>The Budget Officer verifies funding appropriations, tags the Special Allotment Release Order (SARO), and executes the 1st multi-sig commitment on-chain.</p>
-            <div class="pipeline-output-pill">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16 10-4 4-2-2"/></svg>
-              <span>Output: 1st Multi-Sig Sign-off</span>
-            </div>
-          </div>
+              <!-- Researcher 2: Harry Anthony A. Martillano -->
+              <div class="team-member-card">
+                <div class="member-top-row">
+                  <div class="member-avatar">HM</div>
+                  <div class="member-meta">
+                    <h4>Harry Anthony A. Martillano</h4>
+                    <span class="member-role-badge">Researcher</span>
+                  </div>
+                </div>
+                <div class="contributions-box">
+                  <div class="contributions-heading">Specific Contributions</div>
+                  <ul class="contributions-list">
+                    <li>Engineered Ethereum Sepolia smart contracts (<code style="color:#38bdf8;">StaCruzChain.sol</code>) with AccessControl.</li>
+                    <li>Architected full-stack React 19, TypeScript, Express REST API, and Supabase PostgreSQL services.</li>
+                    <li>Implemented multi-gate cryptographic workflow, Web3 wallet bindings, and automated event syncing.</li>
+                    <li>Authored automated test suites and executed 225 functional test cases with 100% pass rate.</li>
+                  </ul>
+                </div>
+              </div>
 
-          <!-- GATE 3 -->
-          <div class="pipeline-card">
-            <div class="pipeline-step-badge step-3">03</div>
-            <div class="pipeline-officer" style="color: var(--civic-blue);">MPDO & Citizens</div>
-            <h3>Field Inspection & Proofs</h3>
-            <p>Engineers and citizen observers validate on-site physical progress (25%, 50%, 75%, 100%), uploading geotagged photos hashed via SHA-256 and IPFS.</p>
-            <div class="pipeline-output-pill">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
-              <span>Output: SHA-256 IPFS Proof</span>
-            </div>
-          </div>
+              <!-- Researcher 3: Arianna C. Surbano -->
+              <div class="team-member-card">
+                <div class="member-top-row">
+                  <div class="member-avatar">AS</div>
+                  <div class="member-meta">
+                    <h4>Arianna C. Surbano</h4>
+                    <span class="member-role-badge">Researcher</span>
+                  </div>
+                </div>
+                <div class="contributions-box">
+                  <div class="contributions-heading">Specific Contributions</div>
+                  <ul class="contributions-list">
+                    <li>Conducted municipal process flow mapping and Citizen's Charter workflow review.</li>
+                    <li>Designed responsive UI/UX wireframes and citizen proposal submission interface.</li>
+                    <li>Administered survey data collection across 399 citizen and 30 LGU respondents.</li>
+                    <li>Conducted data synthesis, statistical analysis, and visual diagram formatting.</li>
+                  </ul>
+                </div>
+              </div>
 
-          <!-- GATE 4 -->
-          <div class="pipeline-card">
-            <div class="pipeline-step-badge step-4">04</div>
-            <div class="pipeline-officer" style="color: var(--seal-emerald);">Treasury (MTO)</div>
-            <h3>NCA Payout & Digital Seal</h3>
-            <p>The Municipal Treasurer executes the final transaction, releasing the Notice of Cash Allocation (NCA) and permanently stamping the transaction with a Digital Seal.</p>
-            <div class="pipeline-output-pill">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
-              <span>Output: Digital Seal of Truth</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2: PROBLEM & RESEARCH OBJECTIVES -->
-    <section class="section section-alt" id="problem">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Context & Rationale</span>
-          <h2 class="section-title">Bridging the Transparency Gap</h2>
-          <p class="section-desc">Comparing the existing manual paper budgeting practices of the MPDO against the decentralized architecture of BayanLedger.</p>
-        </div>
-
-        <div class="comparison-grid">
-          <!-- PROBLEM CARD -->
-          <div class="comparison-card card-problem">
-            <div class="comparison-header">
-              <div class="comparison-icon" aria-hidden="true">✕</div>
-              <div>
-                <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: #dc2626; letter-spacing: 0.05em;">Existing Status</span>
-                <h3>Manual Paper Bottlenecks</h3>
+              <!-- Thesis Adviser -->
+              <div class="team-member-card adviser-card">
+                <div class="member-top-row">
+                  <div class="member-avatar">MV</div>
+                  <div class="member-meta">
+                    <h4 style="color: var(--text-white);">Mia V. Villarica, DIT</h4>
+                    <span class="member-role-badge">Thesis Adviser</span>
+                  </div>
+                </div>
+                <div class="contributions-box">
+                  <div class="contributions-heading" style="color: var(--lspu-crimson);">Advisory Guidance</div>
+                  <ul class="contributions-list">
+                    <li>Supervised overall research direction, methodological alignment, and academic compliance.</li>
+                    <li>Reviewed system architecture, blockchain integration feasibility, and data integrity workflows.</li>
+                    <li>Provided continuous technical criticism and refinement of system quality evaluation metrics.</li>
+                    <li>Endorsed research milestones in partial fulfillment of the BS Information Technology degree.</li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <ul class="comparison-list">
-              <li>
-                <span class="comparison-bullet">✕</span>
-                <span><strong>Absence of Real-Time Visibility:</strong> Budgets and expenditures are reconciled across fragmented paper logs, making tracking slow and tedious.</span>
-              </li>
-              <li>
-                <span class="comparison-bullet">✕</span>
-                <span><strong>Susceptibility to Modification:</strong> Physical files and manual spreadsheets lack tamper-detection mechanisms, creating risk of transcription error.</span>
-              </li>
-              <li>
-                <span class="comparison-bullet">✕</span>
-                <span><strong>Low Citizen Participation:</strong> Residents lack an open, accessible channel to see how participatory budgeting funds are allocated in their barangays.</span>
-              </li>
-              <li>
-                <span class="comparison-bullet">✕</span>
-                <span><strong>Delayed Auditing & Reporting:</strong> Generating Commission on Audit (COA) reports requires weeks of manual cross-referencing.</span>
-              </li>
-            </ul>
-          </div>
 
-          <!-- SOLUTION CARD -->
-          <div class="comparison-card card-solution">
-            <div class="comparison-header">
-              <div class="comparison-icon" aria-hidden="true">✓</div>
-              <div>
-                <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: #16a34a; letter-spacing: 0.05em;">BayanLedger Solution</span>
-                <h3>Decentralized Blockchain Governance</h3>
-              </div>
-            </div>
-            <ul class="comparison-list">
-              <li>
-                <span class="comparison-bullet">✓</span>
-                <span><strong>Real-Time Transparency:</strong> Live municipal dashboard showing exact capital outlay, obligated SARO balances, and paid milestones.</span>
-              </li>
-              <li>
-                <span class="comparison-bullet">✓</span>
-                <span><strong>Cryptographic Tamper Detection:</strong> Background services continuously verify database records against Ethereum Sepolia block hashes.</span>
-              </li>
-              <li>
-                <span class="comparison-bullet">✓</span>
-                <span><strong>Public Citizen Portal:</strong> Mobile-responsive website where Sta. Cruz citizens inspect projects, verify proofs, and submit proposals.</span>
-              </li>
-              <li>
-                <span class="comparison-bullet">✓</span>
-                <span><strong>Instant Digital Audit Trails:</strong> Every transaction, sign-off, and milestone verification is immutably logged with timestamp and wallet address.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- RESEARCH QUESTIONS -->
-        <div style="margin-top: 3.5rem;">
-          <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--ink-primary); margin-bottom: 1.5rem;">Research Questions Addressed</h3>
-          <div class="rq-grid">
-            <div class="rq-card">
-              <div class="rq-num">1</div>
-              <p>What is the existing operational workflow and status of budget monitoring and participatory governance in the MPDO of Sta. Cruz, Laguna?</p>
-            </div>
-            <div class="rq-card">
-              <div class="rq-num">2</div>
-              <p>What software architecture and blockchain modules are necessary to bridge municipal administrative workflows and citizen oversight?</p>
-            </div>
-            <div class="rq-card">
-              <div class="rq-num">3</div>
-              <p>How can smart contracts enforce multi-gate fund-release conditions based on verified milestone completion rather than arbitrary discretion?</p>
-            </div>
-            <div class="rq-card">
-              <div class="rq-num">4</div>
-              <p>How can cryptographic evidence (SHA-256 and IPFS) be integrated into a digital audit trail to detect database tampering in real time?</p>
-            </div>
-            <div class="rq-card">
-              <div class="rq-num">5</div>
-              <p>What is the functional performance of the system when evaluated across 225 rigorous technical test cases by IT and blockchain specialists?</p>
-            </div>
-            <div class="rq-card">
-              <div class="rq-num">6</div>
-              <p>To what degree do internal municipal personnel and local citizens accept the system in terms of the nine ISO/IEC 25010 software quality characteristics?</p>
+            <div style="margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; font-size: 0.88rem; color: var(--text-muted);">
+              <div>Technical Editor: <strong style="color: #ffffff;">Gener F. Mosico, MSIT</strong></div>
+              <div>System Expert: <strong style="color: #ffffff;">Mark P. Bernardino, MSCS</strong></div>
+              <div>Language Critic: <strong style="color: #ffffff;">Jhon Jhon P. Zotomayor</strong></div>
+              <div>Data Analyst: <strong style="color: #ffffff;">Rachiel R. Rivano, PhD</strong></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 3: METHODOLOGY & ARCHITECTURE -->
-    <section class="section" id="methodology">
+    <!-- SECTION 3: PROBLEM STATEMENT AND OBJECTIVES -->
+    <section class="section" id="problem">
       <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Engineering Methodology</span>
-          <h2 class="section-title">Rapid Application Development & Stack</h2>
-          <p class="section-desc">Developed following the 4-phase Rapid Application Development (RAD) life cycle with a mixed-methods research strategy.</p>
-        </div>
+        <div class="poster-card">
+          <div class="card-navy-header">
+            <h3 class="card-navy-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+              <span>Problem Statement and Objectives</span>
+            </h3>
+            <span class="card-header-badge">Institutional Context</span>
+          </div>
+          <div class="card-body">
+            <div class="card-grid-2col">
+              <div>
+                <h4 style="font-size: 1.2rem; font-weight: 800; color: #ffffff; margin: 0 0 0.85rem;">Problem Statement</h4>
+                <p style="font-size: 0.95rem; line-height: 1.6; margin: 0 0 1rem; color: var(--text-secondary);">
+                  The Municipal Planning and Development Office (MPDO) of Sta. Cruz, Laguna currently relies on manual paper-based techniques for participatory budgeting and infrastructure monitoring. This operational reality results in:
+                </p>
+                <ul style="padding-left: 1.25rem; margin: 0 0 1.25rem; font-size: 0.92rem; line-height: 1.6; color: var(--text-secondary);">
+                  <li><strong>Lack of Real-Time Budget Visibility:</strong> Unmonitored fund allocations leading to delayed municipal infrastructure projects.</li>
+                  <li><strong>Manual Paper Vulnerabilities:</strong> Physical records susceptible to data transcription errors, misplacement, and manipulation.</li>
+                  <li><strong>Low Citizen Engagement:</strong> Limited public awareness and participation in participatory budgeting decision-making.</li>
+                  <li><strong>Absence of Automated Anomaly Alerts:</strong> Delayed detection of irregular transactions and budget overruns.</li>
+                </ul>
 
-        <!-- RAD TIMELINE -->
-        <div class="rad-timeline">
-          <div class="rad-card">
-            <div class="rad-phase-tag">Phase 01</div>
-            <h4>Requirements Planning</h4>
-            <p>Key informant interview with MPDO Engr. Rosalyn M. Gutierrez, EnP, Citizen's Charter review, and DBM blockchain gap analysis.</p>
-          </div>
-          <div class="rad-card">
-            <div class="rad-phase-tag">Phase 02</div>
-            <h4>User Design & Prototyping</h4>
-            <p>Constructing ERD models, multi-sig workflow state machines, interactive wireframes, and Solidity smart contract prototypes.</p>
-          </div>
-          <div class="rad-card">
-            <div class="rad-phase-tag">Phase 03</div>
-            <h4>Construction & Implementation</h4>
-            <p>Full-stack development connecting React 19, TypeScript, Supabase PostgreSQL, Express REST APIs, and Ethereum Sepolia contracts.</p>
-          </div>
-          <div class="rad-card">
-            <div class="rad-phase-tag">Phase 04</div>
-            <h4>Cutover & ISO Evaluation</h4>
-            <p>225-case functional test execution with 15 IT experts and comprehensive ISO/IEC 25010 user evaluation with 429 participants.</p>
+                <h5 style="font-size: 1rem; font-weight: 800; color: var(--neon-cyan); margin: 1.25rem 0 0.5rem;">Specific Research Questions:</h5>
+                <ol style="padding-left: 1.25rem; margin: 0; font-size: 0.88rem; line-height: 1.55; color: var(--text-muted);">
+                  <li>What is the current operational workflow of budget monitoring in the MPDO of Sta. Cruz, Laguna?</li>
+                  <li>What core software modules are needed to ensure transparency and accountability?</li>
+                  <li>How can smart contracts enforce multi-gate fund releases based on verified milestones?</li>
+                  <li>How can SHA-256 and IPFS hashing secure audit trails and evidence verification?</li>
+                  <li>What is the functional performance of the system across 225 test cases?</li>
+                  <li>What is the acceptability level of the system evaluated under ISO/IEC 25010?</li>
+                </ol>
+              </div>
+
+              <div>
+                <h4 style="font-size: 1.2rem; font-weight: 800; color: #ffffff; margin: 0 0 0.85rem;">Research Objectives</h4>
+                <div style="background: rgba(6, 11, 22, 0.6); border: 1px solid var(--border-card); border-radius: var(--radius-sm); padding: 1.15rem; margin-bottom: 1.25rem;">
+                  <strong style="color: var(--neon-cyan); display: block; margin-bottom: 0.35rem; font-size: 0.95rem;">General Objective:</strong>
+                  <p style="margin: 0; font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary);">
+                    To design, develop, test, and evaluate BayanLedger—a decentralized budget monitoring and participatory governance system for the MPDO of Sta. Cruz, Laguna—using blockchain technology to eliminate manual deficiencies, establish verifiable audit trails, and encourage citizen engagement.
+                  </p>
+                </div>
+
+                <strong style="color: #ffffff; display: block; margin-bottom: 0.5rem; font-size: 0.95rem;">Specific Objectives:</strong>
+                <ul class="poster-checklist" style="gap: 0.75rem;">
+                  <li>
+                    <div class="check-badge" style="width: 20px; height: 20px; font-size: 0.75rem;">✔</div>
+                    <div class="checklist-content">
+                      <p><strong>Design and develop the 7 core modules:</strong> Dashboard, Ledger, Auto-Release, Project Tracker, Audit Trail, Public Portal, and Alert Mechanism.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="check-badge" style="width: 20px; height: 20px; font-size: 0.75rem;">✔</div>
+                    <div class="checklist-content">
+                      <p><strong>Enforce Multi-Gate Cryptographic RBAC:</strong> Strict role separation (MPDC, Budget Officer, Treasurer, Admin, Citizens) backed by JWT and wallet bindings.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="check-badge" style="width: 20px; height: 20px; font-size: 0.75rem;">✔</div>
+                    <div class="checklist-content">
+                      <p><strong>Validate Functional Readiness:</strong> Execute 225 test cases across 15 IT and blockchain specialists with a 100% passing threshold.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="check-badge" style="width: 20px; height: 20px; font-size: 0.75rem;">✔</div>
+                    <div class="checklist-content">
+                      <p><strong>Evaluate ISO/IEC 25010 Quality:</strong> Measure user acceptability across 9 characteristics with 429 participants from Sta. Cruz, Laguna.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- TECH STACK CARDS -->
-        <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--ink-primary); margin-bottom: 1.25rem;">Technology Stack Breakdown</h3>
-        <div class="tech-stack-grid">
-          <div class="tech-card">
-            <div class="tech-card-category">Smart Contract & Web3</div>
-            <div class="tech-card-name">Solidity ^0.8.20 & Sepolia</div>
-            <p class="tech-card-desc">Hardhat development environment, OpenZeppelin AccessControl, Ethereum Sepolia Testnet, and Ethers.js v5.</p>
+    <!-- SECTION 4: METHODOLOGY & SYSTEM DOCUMENTATION / DIAGRAMS -->
+    <section class="section section-alt" id="methodology">
+      <div class="container">
+        <div class="poster-card">
+          <div class="card-navy-header">
+            <h3 class="card-navy-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" x2="12" y1="22.08" y2="12"/></svg>
+              <span>Methodology & System Documentation / Diagrams</span>
+            </h3>
+            <span class="card-header-badge">RAD Life Cycle & Architecture</span>
           </div>
-          <div class="tech-card">
-            <div class="tech-card-category">Frontend Portal</div>
-            <div class="tech-card-name">React 19, Vite & Tailwind</div>
-            <p class="tech-card-desc">TypeScript, Tailwind CSS v4, Lucide React icons, and Recharts data visualization widgets.</p>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-category">Backend API Services</div>
-            <div class="tech-card-name">Node.js & Express (tsx)</div>
-            <p class="tech-card-desc">REST API architecture, JWT role-based access control, Multer file handling, and automated blockchain event syncing.</p>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-category">Database & Storage</div>
-            <div class="tech-card-name">PostgreSQL (Supabase)</div>
-            <p class="tech-card-desc">Relational schema for fast querying, IPFS decentralized storage pinning, and SHA-256 evidence hashing.</p>
+          <div class="card-body">
+            <!-- 4 RAD PHASES -->
+            <h4 style="font-size: 1.2rem; font-weight: 800; color: #ffffff; margin: 0 0 1rem;">Rapid Application Development (RAD) Model</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+              <div style="background: rgba(6, 11, 22, 0.6); border: 1px solid var(--border-card); border-radius: var(--radius-sm); padding: 1rem;">
+                <span style="font-size: 0.75rem; font-weight: 800; color: var(--lspu-crimson); text-transform: uppercase;">Phase 1</span>
+                <strong style="display: block; color: #ffffff; font-size: 0.95rem; margin: 0.2rem 0 0.4rem;">Requirements Planning</strong>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted); line-height: 1.45;">Key informant interview with MPDO leadership, Citizen's Charter analysis, and blockchain gap review.</p>
+              </div>
+              <div style="background: rgba(6, 11, 22, 0.6); border: 1px solid var(--border-card); border-radius: var(--radius-sm); padding: 1rem;">
+                <span style="font-size: 0.75rem; font-weight: 800; color: var(--lspu-crimson); text-transform: uppercase;">Phase 2</span>
+                <strong style="display: block; color: #ffffff; font-size: 0.95rem; margin: 0.2rem 0 0.4rem;">User Design & Prototyping</strong>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted); line-height: 1.45;">System architecture design, ERD database structure, multi-sig approval workflows, and wireframes.</p>
+              </div>
+              <div style="background: rgba(6, 11, 22, 0.6); border: 1px solid var(--border-card); border-radius: var(--radius-sm); padding: 1rem;">
+                <span style="font-size: 0.75rem; font-weight: 800; color: var(--lspu-crimson); text-transform: uppercase;">Phase 3</span>
+                <strong style="display: block; color: #ffffff; font-size: 0.95rem; margin: 0.2rem 0 0.4rem;">Construction & Coding</strong>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted); line-height: 1.45;">Smart contract compilation, Express REST APIs, Supabase PostgreSQL, and React 19 frontend integration.</p>
+              </div>
+              <div style="background: rgba(6, 11, 22, 0.6); border: 1px solid var(--border-card); border-radius: var(--radius-sm); padding: 1rem;">
+                <span style="font-size: 0.75rem; font-weight: 800; color: var(--lspu-crimson); text-transform: uppercase;">Phase 4</span>
+                <strong style="display: block; color: #ffffff; font-size: 0.95rem; margin: 0.2rem 0 0.4rem;">Cutover & Testing</strong>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted); line-height: 1.45;">225 functional test executions with 15 experts and ISO 25010 user evaluation with 429 participants.</p>
+              </div>
+            </div>
+
+            <!-- SYSTEM DOCUMENTATION DIAGRAM (Figure 6) -->
+            <div style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 2rem; align-items: center; background: rgba(6, 11, 22, 0.8); border: 1px solid var(--border-card); border-radius: var(--radius-md); padding: 1.5rem;">
+              <div class="shot-btn" data-full="assets/img/architecture.webp" data-alt="Figure 6. BayanLedger System Architecture Diagram" data-caption="Figure 6. BayanLedger System Architecture: Multilayered integration of citizen access, Node.js application services, Supabase PostgreSQL database, and Ethereum Sepolia blockchain layer." role="button" tabindex="0" style="cursor: zoom-in; overflow: hidden; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); background: #050a14; text-align: center;">
+                <img src="assets/img/architecture-sm.webp" width="720" height="1080" alt="Figure 6. BayanLedger System Architecture Diagram" style="max-height: 360px; width: auto; margin: 0 auto; display: block;">
+                <div style="background: var(--bg-card-header); color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 0.35rem 0.75rem; border-top: 1px solid var(--border-subtle);">
+                  🔍 Click to Enlarge Full Architecture Diagram (Figure 6)
+                </div>
+              </div>
+              <div>
+                <span style="font-size: 0.75rem; font-weight: 800; color: var(--lspu-crimson); text-transform: uppercase; letter-spacing: 0.05em;">System Documentation</span>
+                <h4 style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin: 0.35rem 0 0.75rem;">Multilayered System Architecture</h4>
+                <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 1rem;">
+                  The system documentation specifies a 4-tier architecture:
+                </p>
+                <ul style="padding-left: 1.25rem; margin: 0 0 1rem; font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary);">
+                  <li><strong>Access Layer:</strong> Official MPDO Web Portal and Citizen Mobile-Responsive App.</li>
+                  <li><strong>Application Layer:</strong> Node.js / Express REST API with JWT role-based security.</li>
+                  <li><strong>Data Layer:</strong> Supabase PostgreSQL for structured querying and IPFS for photo evidence.</li>
+                  <li><strong>Blockchain Layer:</strong> Solidity smart contract deployed on the Ethereum Sepolia Testnet.</li>
+                </ul>
+                <div style="font-size: 0.82rem; font-family: var(--font-mono); background: #050a14; padding: 0.5rem 0.75rem; border-radius: 4px; color: var(--neon-cyan); border: 1px solid var(--border-subtle);">
+                  Smart Contract Address: <strong>0x4db67F3D46D212895484C24A54c5b10cA07b61F5</strong>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- ARCHITECTURE DIAGRAM CALLOUT -->
-        <div style="margin-top: 3.5rem; background: #ffffff; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-sm); display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2rem; align-items: center;">
-          <div class="zoom-trigger shot-btn" data-full="assets/img/architecture.webp" data-alt="BayanLedger System Architecture Diagram" data-caption="Figure 6. BayanLedger System Architecture: Multilayered integration of citizen access, Node.js application services, Supabase PostgreSQL database, and Ethereum Sepolia blockchain layer." style="position: static; padding: 0; background: transparent; border: 0; cursor: zoom-in;" role="button" tabindex="0">
-            <img src="assets/img/architecture-sm.webp" width="720" height="1080" alt="BayanLedger System Architecture Diagram" style="border-radius: var(--radius-md); border: 1px solid var(--border-light); width: 100%; max-height: 380px; object-fit: contain; background: #f8fafc;">
+    <!-- SECTION 5: SYSTEM FEATURES AND SCREENSHOTS -->
+    <section class="section" id="system">
+      <div class="container">
+        <div class="poster-card">
+          <div class="card-navy-header">
+            <h3 class="card-navy-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+              <span>System Features and Screenshots</span>
+            </h3>
+            <span class="card-header-badge">Key Features & Modules</span>
           </div>
-          <div>
-            <span class="meta-tag meta-fr">System Documentation</span>
-            <h3 style="font-size: 1.45rem; font-weight: 800; color: var(--ink-primary); margin: 0.5rem 0 0.85rem;">Multilayered System Architecture</h3>
-            <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.6; margin: 0 0 1.25rem;">
-              The architecture cleanly separates routine application queries from immutable on-chain transactions. Citizen queries and administrative interactions hit the fast PostgreSQL database, while critical state changes—milestone approvals, SARO allotments, and disbursements—are committed to the Ethereum Sepolia blockchain layer.
+          <div class="card-body">
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0 0 1.75rem;">
+              Click any screenshot below to open the high-resolution lightbox view. All screenshots are authentic captures from the system implementation.
             </p>
-            <button class="btn btn-outline shot-btn" data-full="assets/img/architecture.webp" data-alt="BayanLedger System Architecture Diagram" data-caption="Figure 6. BayanLedger System Architecture Diagram" style="background: var(--bg-page); color: var(--ink-primary); border-color: var(--border-subtle);">
-              🔍 View Full Architecture Diagram
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- SECTION 4: INTERACTIVE SYSTEM MODULES SHOWCASE (TABS) -->
-    <section class="section section-dark" id="system">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Interactive Preview</span>
-          <h2 class="section-title">System Features & Modules</h2>
-          <p class="section-desc">Click between the system modules below to explore the actual interfaces, functional requirements, and verified features of BayanLedger.</p>
-        </div>
-
-        <!-- TABS NAV -->
-        <div class="module-tabs-nav" role="tablist" aria-label="System Modules">
-          <button class="module-tab-btn active" data-tab="tab-dashboard" role="tab" aria-selected="true" id="btn-tab-dashboard">
-            <span>📊 Dashboard</span>
-          </button>
-          <button class="module-tab-btn" data-tab="tab-ledger" role="tab" aria-selected="false" id="btn-tab-ledger">
-            <span>⛓️ Budget Ledger</span>
-          </button>
-          <button class="module-tab-btn" data-tab="tab-milestones" role="tab" aria-selected="false" id="btn-tab-milestones">
-            <span>📸 Milestone Proofs</span>
-          </button>
-          <button class="module-tab-btn" data-tab="tab-audit" role="tab" aria-selected="false" id="btn-tab-audit">
-            <span>🛡️ Audit Trail</span>
-          </button>
-          <button class="module-tab-btn" data-tab="tab-citizen" role="tab" aria-selected="false" id="btn-tab-citizen">
-            <span>👥 Citizen Portal</span>
-          </button>
-          <button class="module-tab-btn" data-tab="tab-alerts" role="tab" aria-selected="false" id="btn-tab-alerts">
-            <span>⚠️ Anomaly Alerts</span>
-          </button>
-          <button class="module-tab-btn" data-tab="tab-login" role="tab" aria-selected="false" id="btn-tab-login">
-            <span>🔐 Official Login</span>
-          </button>
-        </div>
-
-        <!-- TAB PANELS -->
-        <div class="module-panels-container">
-          <!-- PANEL 1: DASHBOARD -->
-          <div class="module-panel active" id="tab-dashboard" role="tabpanel" aria-labelledby="btn-tab-dashboard">
-            <div class="module-display-card">
-              <div class="module-media-col">
-                <img src="assets/img/dashboard.webp" width="960" height="458" alt="Real-Time Budget Transparency Dashboard Screenshot" loading="lazy">
-                <button class="zoom-trigger shot-btn" data-full="assets/img/dashboard.webp" data-alt="Real-Time Budget Transparency Dashboard" data-caption="Figure 9. Real-Time Budget Transparency Dashboard: Displays municipal budget allocations, expenditures, milestone completion rates, and project pipeline status." aria-label="Enlarge dashboard screenshot">
-                  🔍 Enlarge
-                </button>
-              </div>
-              <div class="module-info-col">
-                <div class="module-meta-badges">
-                  <span class="meta-tag meta-fr">Requirement FR-03 & FR-11</span>
-                  <span class="meta-tag meta-status">100% Implemented</span>
+            <div class="shots-grid">
+              <!-- Screenshot 1: Dashboard -->
+              <div class="shot-card">
+                <div class="shot-card-img-wrap shot-btn" data-full="assets/img/dashboard.webp" data-alt="Real-Time Budget Transparency Dashboard" data-caption="Figure 9. Real-Time Budget Transparency Dashboard: Displays municipal budget allocations, expenditures, milestone completion rates, and project pipeline status." role="button" tabindex="0">
+                  <img src="assets/img/dashboard-sm.webp" width="960" height="458" alt="Real-Time Budget Transparency Dashboard" loading="lazy">
+                  <span class="shot-zoom-overlay">🔍 Zoom</span>
                 </div>
-                <h3>Real-Time Budget Transparency Dashboard</h3>
-                <p>Provides municipal executives, MPDO planners, and citizen groups with an instant high-level overview of active municipal capital outlay, obligated funds, paid milestone disbursements, and barangay project status distributions.</p>
-                <ul class="module-feature-checklist">
-                  <li><span class="check-icon">✓</span> Total AIP Budget, Obligated SARO, and Disbursed NCA tiles</li>
-                  <li><span class="check-icon">✓</span> Real-time synchronisation between PostgreSQL and Sepolia events</li>
-                  <li><span class="check-icon">✓</span> Project category filtering (Infrastructure, Health, Disaster, Markets)</li>
-                  <li><span class="check-icon">✓</span> Direct link to PDF compliance scoreboard reports for COA audit</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- PANEL 2: LEDGER -->
-          <div class="module-panel" id="tab-ledger" role="tabpanel" aria-labelledby="btn-tab-ledger" hidden>
-            <div class="module-display-card">
-              <div class="module-media-col">
-                <img src="assets/img/ledger.webp" width="960" height="458" alt="Tamper-Proof Blockchain Budget Ledger Screenshot" loading="lazy">
-                <button class="zoom-trigger shot-btn" data-full="assets/img/ledger.webp" data-alt="Tamper-Proof Blockchain Budget Ledger" data-caption="Figure 10. Tamper-Proof Budget Ledger: Records budget transactions, cryptographic transaction hashes, sender addresses, and Sepolia block confirmations." aria-label="Enlarge ledger screenshot">
-                  🔍 Enlarge
-                </button>
-              </div>
-              <div class="module-info-col">
-                <div class="module-meta-badges">
-                  <span class="meta-tag meta-fr">Requirement FR-07 & FR-08</span>
-                  <span class="meta-tag meta-status">Sepolia Testnet Active</span>
+                <div class="shot-card-body">
+                  <span class="shot-module-tag">Module 1 • Figure 9</span>
+                  <h4>Real-Time Budget Dashboard</h4>
+                  <p>Displays live municipal capital outlays, obligated SARO funds, disbursed NCA sums, and project completion rates.</p>
                 </div>
-                <h3>Tamper-Proof Blockchain Budget Ledger</h3>
-                <p>The on-chain transparency record where all authorized municipal expenditures are committed as verifiable Ethereum Sepolia transactions. Once written, no administrative account can delete or silently overwrite ledger records.</p>
-                <ul class="module-feature-checklist">
-                  <li><span class="check-icon">✓</span> Permanent cryptographic transaction hash (TxHash) commitment</li>
-                  <li><span class="check-icon">✓</span> Direct block explorer verification links to Sepolia Etherscan</li>
-                  <li><span class="check-icon">✓</span> Multi-signature wallet addresses tied to authorized municipal roles</li>
-                  <li><span class="check-icon">✓</span> Immutable SARO allotment and NCA payment disbursement receipts</li>
-                </ul>
               </div>
-            </div>
-          </div>
 
-          <!-- PANEL 3: MILESTONES -->
-          <div class="module-panel" id="tab-milestones" role="tabpanel" aria-labelledby="btn-tab-milestones" hidden>
-            <div class="module-display-card">
-              <div class="module-media-col">
-                <img src="assets/img/milestone.webp" width="960" height="454" alt="Milestone Progress and Deliverables Verification Screenshot" loading="lazy">
-                <button class="zoom-trigger shot-btn" data-full="assets/img/milestone.webp" data-alt="Project Progress and Milestone Verification" data-caption="Figure 11. Project Progress Milestone Verification: MPDC inspection checklist, photographic evidence validation, and milestone disbursement authorization." aria-label="Enlarge milestone verification screenshot">
-                  🔍 Enlarge
-                </button>
-              </div>
-              <div class="module-info-col">
-                <div class="module-meta-badges">
-                  <span class="meta-tag meta-fr">Requirement FR-04 & FR-05</span>
-                  <span class="meta-tag meta-status">Multi-Gate Enforced</span>
+              <!-- Screenshot 2: Ledger -->
+              <div class="shot-card">
+                <div class="shot-card-img-wrap shot-btn" data-full="assets/img/ledger.webp" data-alt="Tamper-Proof Blockchain Budget Ledger" data-caption="Figure 10. Tamper-Proof Budget Ledger: Records budget transactions, cryptographic transaction hashes, sender addresses, and Sepolia block confirmations." role="button" tabindex="0">
+                  <img src="assets/img/ledger-sm.webp" width="960" height="458" alt="Tamper-Proof Blockchain Budget Ledger" loading="lazy">
+                  <span class="shot-zoom-overlay">🔍 Zoom</span>
                 </div>
-                <h3>Milestone Progress & Proof-of-Work Verification</h3>
-                <p>Prevents premature fund releases by enforcing physical milestone accomplishment checkpoints (25%, 50%, 75%, 100%). Each milestone requires geotagged site inspection photos and accomplishment documents before Treasury payment is unlocked.</p>
-                <ul class="module-feature-checklist">
-                  <li><span class="check-icon">✓</span> Contractor proof-of-work submission and deliverable checklists</li>
-                  <li><span class="check-icon">✓</span> SHA-256 cryptographic hashing of photos and inspection reports</li>
-                  <li><span class="check-icon">✓</span> Decentralized document pinning via IPFS metadata URI</li>
-                  <li><span class="check-icon">✓</span> Two-gate verification requiring MPDC inspection and Budget sign-off</li>
-                </ul>
+                <div class="shot-card-body">
+                  <span class="shot-module-tag">Module 2 • Figure 10</span>
+                  <h4>Tamper-Proof Budget Ledger</h4>
+                  <p>Verifiable Sepolia transaction ledger displaying immutable block heights, cryptographic hashes, and SARO references.</p>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- PANEL 4: AUDIT TRAIL -->
-          <div class="module-panel" id="tab-audit" role="tabpanel" aria-labelledby="btn-tab-audit" hidden>
-            <div class="module-display-card">
-              <div class="module-media-col">
-                <img src="assets/img/audit-trail.webp" width="960" height="460" alt="Digital Audit Trail and Tamper Detection Screenshot" loading="lazy">
-                <button class="zoom-trigger shot-btn" data-full="assets/img/audit-trail.webp" data-alt="Cryptographic Digital Audit Trail" data-caption="Figure 12. Digital Audit Trail: Immutable activity log capturing user actions, transaction timestamps, and tamper detection verification states." aria-label="Enlarge audit trail screenshot">
-                  🔍 Enlarge
-                </button>
-              </div>
-              <div class="module-info-col">
-                <div class="module-meta-badges">
-                  <span class="meta-tag meta-fr">Requirement FR-10 & FR-12</span>
-                  <span class="meta-tag meta-status">Real-Time Validation</span>
+              <!-- Screenshot 3: Milestone Verification -->
+              <div class="shot-card">
+                <div class="shot-card-img-wrap shot-btn" data-full="assets/img/milestone.webp" data-alt="Milestone Progress and Deliverables Verification" data-caption="Figure 11. Project Progress Milestone Verification: MPDC inspection checklist, photographic evidence validation, and milestone disbursement authorization." role="button" tabindex="0">
+                  <img src="assets/img/milestone-sm.webp" width="960" height="454" alt="Milestone Progress and Deliverables Verification" loading="lazy">
+                  <span class="shot-zoom-overlay">🔍 Zoom</span>
                 </div>
-                <h3>Digital Audit Trail & Tamper Detection</h3>
-                <p>Continuously records all administrative activities, login sessions, role assignments, and financial transactions. The background tamper detection engine compares live database records against Sepolia block hashes to identify unauthorized alterations.</p>
-                <ul class="module-feature-checklist">
-                  <li><span class="check-icon">✓</span> Comprehensive logging of entity creations, edits, and sign-offs</li>
-                  <li><span class="check-icon">✓</span> Automated integrity checks verifying database rows against block hashes</li>
-                  <li><span class="check-icon">✓</span> Instant visual flags (Verified vs Tampered status badges)</li>
-                  <li><span class="check-icon">✓</span> Exportable audit reports for Commission on Audit (COA) inspections</li>
-                </ul>
+                <div class="shot-card-body">
+                  <span class="shot-module-tag">Module 3 • Figure 11</span>
+                  <h4>Milestone Verification & Proofs</h4>
+                  <p>Enforces physical progress milestones (25%, 50%, 75%, 100%) paired with contractor inspection photos and SHA-256 hashes.</p>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- PANEL 5: CITIZEN PORTAL -->
-          <div class="module-panel" id="tab-citizen" role="tabpanel" aria-labelledby="btn-tab-citizen" hidden>
-            <div class="module-display-card">
-              <div class="module-media-col">
-                <img src="assets/img/citizen-portal.webp" width="960" height="459" alt="Public Citizen Monitoring Interface Screenshot" loading="lazy">
-                <button class="zoom-trigger shot-btn" data-full="assets/img/citizen-portal.webp" data-alt="Public Citizen Monitoring Interface" data-caption="Figure 13. Citizen Monitoring Interface: Public project browser, funding source details, barangay filters, and community feedback module." aria-label="Enlarge citizen portal screenshot">
-                  🔍 Enlarge
-                </button>
-              </div>
-              <div class="module-info-col">
-                <div class="module-meta-badges">
-                  <span class="meta-tag meta-fr">Requirement FR-09</span>
-                  <span class="meta-tag meta-status">Public Access</span>
+              <!-- Screenshot 4: Audit Trail -->
+              <div class="shot-card">
+                <div class="shot-card-img-wrap shot-btn" data-full="assets/img/audit-trail.webp" data-alt="Digital Audit Trail and Tamper Detection" data-caption="Figure 12. Digital Audit Trail: Immutable activity log capturing user actions, transaction timestamps, and tamper detection verification states." role="button" tabindex="0">
+                  <img src="assets/img/audit-trail-sm.webp" width="960" height="460" alt="Digital Audit Trail and Tamper Detection" loading="lazy">
+                  <span class="shot-zoom-overlay">🔍 Zoom</span>
                 </div>
-                <h3>Public Citizen Monitoring & Proposal Portal</h3>
-                <p>The public face of BayanLedger, allowing residents across the 26 barangays of Sta. Cruz, Laguna to view ongoing municipal projects, monitor budget allocations, examine verified milestones, and submit community proposals or issue reports directly.</p>
-                <ul class="module-feature-checklist">
-                  <li><span class="check-icon">✓</span> Fully mobile-responsive citizen interface requiring no wallet login</li>
-                  <li><span class="check-icon">✓</span> Barangay-level search, status filters, and interactive maps</li>
-                  <li><span class="check-icon">✓</span> Community feedback and photo submission for citizen monitoring</li>
-                  <li><span class="check-icon">✓</span> Public proposal submission channel reviewed by MPDO staff</li>
-                </ul>
+                <div class="shot-card-body">
+                  <span class="shot-module-tag">Module 4 • Figure 12</span>
+                  <h4>Digital Audit Trail & Detection</h4>
+                  <p>Comprehensive activity logger comparing live PostgreSQL database records against Sepolia block hashes to flag tampering.</p>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- PANEL 6: ALERTS -->
-          <div class="module-panel" id="tab-alerts" role="tabpanel" aria-labelledby="btn-tab-alerts" hidden>
-            <div class="module-display-card">
-              <div class="module-media-col">
-                <img src="assets/img/alerts.webp" width="960" height="511" alt="Transaction Alert and Notification Interface Screenshot" loading="lazy">
-                <button class="zoom-trigger shot-btn" data-full="assets/img/alerts.webp" data-alt="System Alerts and Irregularity Monitoring" data-caption="Figure 14. Alert and Notification Interface: Real-time alert notifications for unusual transactions, schedule delays, and budget overrun warnings." aria-label="Enlarge alerts screenshot">
-                  🔍 Enlarge
-                </button>
-              </div>
-              <div class="module-info-col">
-                <div class="module-meta-badges">
-                  <span class="meta-tag meta-fr">Requirement FR-12</span>
-                  <span class="meta-tag meta-status">Automated Monitor</span>
+              <!-- Screenshot 5: Citizen Portal -->
+              <div class="shot-card">
+                <div class="shot-card-img-wrap shot-btn" data-full="assets/img/citizen-portal.webp" data-alt="Public Citizen Monitoring Interface" data-caption="Figure 13. Citizen Monitoring Interface: Public project browser, funding source details, barangay filters, and community feedback module." role="button" tabindex="0">
+                  <img src="assets/img/citizen-portal-sm.webp" width="960" height="459" alt="Public Citizen Monitoring Interface" loading="lazy">
+                  <span class="shot-zoom-overlay">🔍 Zoom</span>
                 </div>
-                <h3>Transaction Alert & Irregularity Notification</h3>
-                <p>An automated surveillance mechanism that monitors project execution and financial movements. Flags unusual conditions such as over-budget allocations, stalled milestones, and hash mismatches, alerting municipal officials immediately.</p>
-                <ul class="module-feature-checklist">
-                  <li><span class="check-icon">✓</span> Prioritized alerts (High, Medium, Low severity classification)</li>
-                  <li><span class="check-icon">✓</span> Real-time notifications for milestone deadline breaches</li>
-                  <li><span class="check-icon">✓</span> Automated warning triggers for potential budget overrun attempts</li>
-                  <li><span class="check-icon">✓</span> Integrated with Firebase Cloud Messaging (FCM) for mobile delivery</li>
-                </ul>
+                <div class="shot-card-body">
+                  <span class="shot-module-tag">Module 5 • Figure 13</span>
+                  <h4>Citizen Monitoring Portal</h4>
+                  <p>Open access portal allowing Sta. Cruz residents to browse municipal projects, inspect receipts, and submit proposals.</p>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- PANEL 7: LOGIN -->
-          <div class="module-panel" id="tab-login" role="tabpanel" aria-labelledby="btn-tab-login" hidden>
-            <div class="module-display-card">
-              <div class="module-media-col">
-                <img src="assets/img/login.webp" width="960" height="460" alt="Official Authentication and RBAC Login Screenshot" loading="lazy">
-                <button class="zoom-trigger shot-btn" data-full="assets/img/login.webp" data-alt="Official Authentication & Sign-in" data-caption="Figure 8. BayanLedger Login Interface: Secure role-based portal access with JWT authentication and Web3 wallet address association." aria-label="Enlarge login screenshot">
-                  🔍 Enlarge
-                </button>
-              </div>
-              <div class="module-info-col">
-                <div class="module-meta-badges">
-                  <span class="meta-tag meta-fr">Requirement FR-01 & FR-02</span>
-                  <span class="meta-tag meta-status">RBAC Active</span>
+              <!-- Screenshot 6: Alerts -->
+              <div class="shot-card">
+                <div class="shot-card-img-wrap shot-btn" data-full="assets/img/alerts.webp" data-alt="Transaction Alert and Notification Interface" data-caption="Figure 14. Alert and Notification Interface: Real-time alert notifications for unusual transactions, schedule delays, and budget overrun warnings." role="button" tabindex="0">
+                  <img src="assets/img/alerts-sm.webp" width="960" height="511" alt="Transaction Alert and Notification Interface" loading="lazy">
+                  <span class="shot-zoom-overlay">🔍 Zoom</span>
                 </div>
-                <h3>Official Authentication & Role-Based Access</h3>
-                <p>Protects municipal workflows by enforcing strict Role-Based Access Control (RBAC). Grants designated permissions to Admin, MPDC, Budget Officer, and Treasurer accounts, mapping JWT credentials to Ethereum wallet addresses for on-chain signing.</p>
-                <ul class="module-feature-checklist">
-                  <li><span class="check-icon">✓</span> Secure JWT token session management and auto-logout safeguards</li>
-                  <li><span class="check-icon">✓</span> Web3 wallet address association for blockchain transaction signing</li>
-                  <li><span class="check-icon">✓</span> Route-level access protection preventing unauthorized module access</li>
-                  <li><span class="check-icon">✓</span> Admin dashboard for user role assignment and blockchain role grants</li>
-                </ul>
+                <div class="shot-card-body">
+                  <span class="shot-module-tag">Module 6 • Figure 14</span>
+                  <h4>Transaction Alerts & Warnings</h4>
+                  <p>Automated surveillance flagging irregular budget adjustments, milestone delays, and unauthorized access attempts.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -595,440 +599,256 @@
       </div>
     </section>
 
-    <!-- SECTION 5: EMPIRICAL RESULTS & ISO 25010 EVALUATION -->
+    <!-- SECTION 6: RESULTS AND EVALUATION -->
     <section class="section section-alt" id="results">
       <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Empirical Findings</span>
-          <h2 class="section-title">Evaluation Results & Testing Evidence</h2>
-          <p class="section-desc">Quantitative evidence gathered from 429 stakeholder evaluations in Sta. Cruz, Laguna and 225 technical test cases evaluated by 15 IT and blockchain specialists.</p>
-        </div>
+        <div class="poster-card">
+          <div class="card-navy-header">
+            <h3 class="card-navy-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <span>Results & Evaluation Findings</span>
+            </h3>
+            <span class="card-header-badge">ISO/IEC 25010 & System Testing</span>
+          </div>
+          <div class="card-body">
+            <div class="card-grid-2col" style="margin-bottom: 2rem;">
+              <!-- Table 1: ISO 25010 Results -->
+              <div>
+                <h4 style="font-size: 1.15rem; font-weight: 800; color: #ffffff; margin: 0 0 0.75rem;">User Acceptance Evaluation (429 Evaluators)</h4>
+                <div class="table-wrap">
+                  <table class="poster-table">
+                    <thead>
+                      <tr>
+                        <th>Quality Characteristic</th>
+                        <th>Mean</th>
+                        <th>Interpretation</th>
+                        <th>Rank</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Interaction Capability</strong></td>
+                        <td>4.58</td>
+                        <td>Strongly Agree</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Security</strong></td>
+                        <td>4.56</td>
+                        <td>Strongly Agree</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Functional Suitability</strong></td>
+                        <td>4.56</td>
+                        <td>Strongly Agree</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Reliability</strong></td>
+                        <td>4.55</td>
+                        <td>Strongly Agree</td>
+                        <td>4</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Compatibility</strong></td>
+                        <td>4.55</td>
+                        <td>Strongly Agree</td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Safety</strong></td>
+                        <td>4.55</td>
+                        <td>Strongly Agree</td>
+                        <td>6</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Flexibility</strong></td>
+                        <td>4.54</td>
+                        <td>Strongly Agree</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Maintainability</strong></td>
+                        <td>4.53</td>
+                        <td>Strongly Agree</td>
+                        <td>8</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Performance Efficiency</strong></td>
+                        <td>4.52</td>
+                        <td>Strongly Agree</td>
+                        <td>9</td>
+                      </tr>
+                      <tr style="background: rgba(56, 189, 248, 0.1); font-weight: 800;">
+                        <td><strong>Overall Weighted Mean</strong></td>
+                        <td style="color: var(--neon-cyan);"><strong>4.55</strong></td>
+                        <td><strong>Strongly Agree</strong></td>
+                        <td>—</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
 
-        <!-- STATS HERO STRIP -->
-        <div class="results-hero-strip">
-          <div class="stat-box">
-            <div class="stat-box-num">4.55</div>
-            <div class="stat-box-label">Overall Weighted Mean</div>
-            <div class="stat-box-sub">Strongly Agree (ISO 25010)</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-box-num">429</div>
-            <div class="stat-box-label">Evaluation Participants</div>
-            <div class="stat-box-sub">399 Citizens + 30 LGU Staff</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-box-num">100%</div>
-            <div class="stat-box-label">Functional Test Pass Rate</div>
-            <div class="stat-box-sub">225 / 225 Cases Passed</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-box-num">4.58</div>
-            <div class="stat-box-label">Top Ranked Criterion</div>
-            <div class="stat-box-sub">Interaction Capability (Usability)</div>
-          </div>
-        </div>
+              <!-- Table 2: Functional System Testing -->
+              <div>
+                <h4 style="font-size: 1.15rem; font-weight: 800; color: #ffffff; margin: 0 0 0.75rem;">Functional System Testing (15 IT Experts)</h4>
+                <div class="table-wrap">
+                  <table class="poster-table">
+                    <thead>
+                      <tr>
+                        <th>Testing Category</th>
+                        <th>Cases</th>
+                        <th>Pass</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Authentication & RBAC</strong></td>
+                        <td>45</td>
+                        <td>45</td>
+                        <td><span class="badge-pass">PASS</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>Project & Budget Allocation</strong></td>
+                        <td>45</td>
+                        <td>45</td>
+                        <td><span class="badge-pass">PASS</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>Blockchain & Smart Contracts</strong></td>
+                        <td>45</td>
+                        <td>45</td>
+                        <td><span class="badge-pass">PASS</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dashboard & Anomaly Alerts</strong></td>
+                        <td>45</td>
+                        <td>45</td>
+                        <td><span class="badge-pass">PASS</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>Citizen Monitoring Portal</strong></td>
+                        <td>45</td>
+                        <td>45</td>
+                        <td><span class="badge-pass">PASS</span></td>
+                      </tr>
+                      <tr style="background: rgba(16, 185, 129, 0.1); font-weight: 800;">
+                        <td><strong>Total Test Execution</strong></td>
+                        <td style="color: #6ee7b7;"><strong>225</strong></td>
+                        <td style="color: #6ee7b7;"><strong>225</strong></td>
+                        <td><span class="badge-pass">100% PASS</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
-        <!-- ISO 25010 PROGRESS CARDS -->
-        <h3 style="font-size: 1.45rem; font-weight: 800; color: var(--ink-primary); margin-bottom: 1.5rem;">ISO/IEC 25010 Software Quality Characteristic Ratings</h3>
-        <div class="iso-progress-grid">
-          <!-- Item 1: Interaction Capability -->
-          <div class="iso-bar-card">
-            <div class="iso-card-head">
-              <span class="iso-title">Interaction Capability</span>
-              <span class="iso-score">4.58 / 5.00</span>
-            </div>
-            <div class="iso-bar-track">
-              <div class="iso-bar-fill" style="width: 91.6%;"></div>
-            </div>
-            <div class="iso-card-meta">
-              <span>Interpretation: <strong>Strongly Agree</strong></span>
-              <span>Rank <strong>#1</strong></span>
-            </div>
-          </div>
-
-          <!-- Item 2: Security -->
-          <div class="iso-bar-card">
-            <div class="iso-card-head">
-              <span class="iso-title">Security</span>
-              <span class="iso-score">4.56 / 5.00</span>
-            </div>
-            <div class="iso-bar-track">
-              <div class="iso-bar-fill" style="width: 91.2%;"></div>
-            </div>
-            <div class="iso-card-meta">
-              <span>Interpretation: <strong>Strongly Agree</strong></span>
-              <span>Rank <strong>#2</strong></span>
-            </div>
-          </div>
-
-          <!-- Item 3: Functional Suitability -->
-          <div class="iso-bar-card">
-            <div class="iso-card-head">
-              <span class="iso-title">Functional Suitability</span>
-              <span class="iso-score">4.56 / 5.00</span>
-            </div>
-            <div class="iso-bar-track">
-              <div class="iso-bar-fill" style="width: 91.2%;"></div>
-            </div>
-            <div class="iso-card-meta">
-              <span>Interpretation: <strong>Strongly Agree</strong></span>
-              <span>Rank <strong>#3</strong></span>
-            </div>
-          </div>
-
-          <!-- Item 4: Reliability -->
-          <div class="iso-bar-card">
-            <div class="iso-card-head">
-              <span class="iso-title">Reliability</span>
-              <span class="iso-score">4.55 / 5.00</span>
-            </div>
-            <div class="iso-bar-track">
-              <div class="iso-bar-fill" style="width: 91.0%;"></div>
-            </div>
-            <div class="iso-card-meta">
-              <span>Interpretation: <strong>Strongly Agree</strong></span>
-              <span>Rank <strong>#4</strong></span>
-            </div>
-          </div>
-
-          <!-- Item 5: Compatibility -->
-          <div class="iso-bar-card">
-            <div class="iso-card-head">
-              <span class="iso-title">Compatibility</span>
-              <span class="iso-score">4.55 / 5.00</span>
-            </div>
-            <div class="iso-bar-track">
-              <div class="iso-bar-fill" style="width: 91.0%;"></div>
-            </div>
-            <div class="iso-card-meta">
-              <span>Interpretation: <strong>Strongly Agree</strong></span>
-              <span>Rank <strong>#5</strong></span>
-            </div>
-          </div>
-
-          <!-- Item 6: Safety -->
-          <div class="iso-bar-card">
-            <div class="iso-card-head">
-              <span class="iso-title">Safety</span>
-              <span class="iso-score">4.55 / 5.00</span>
-            </div>
-            <div class="iso-bar-track">
-              <div class="iso-bar-fill" style="width: 91.0%;"></div>
-            </div>
-            <div class="iso-card-meta">
-              <span>Interpretation: <strong>Strongly Agree</strong></span>
-              <span>Rank <strong>#6</strong></span>
-            </div>
-          </div>
-
-          <!-- Item 7: Flexibility -->
-          <div class="iso-bar-card">
-            <div class="iso-card-head">
-              <span class="iso-title">Flexibility</span>
-              <span class="iso-score">4.54 / 5.00</span>
-            </div>
-            <div class="iso-bar-track">
-              <div class="iso-bar-fill" style="width: 90.8%;"></div>
-            </div>
-            <div class="iso-card-meta">
-              <span>Interpretation: <strong>Strongly Agree</strong></span>
-              <span>Rank <strong>#7</strong></span>
-            </div>
-          </div>
-
-          <!-- Item 8: Maintainability -->
-          <div class="iso-bar-card">
-            <div class="iso-card-head">
-              <span class="iso-title">Maintainability</span>
-              <span class="iso-score">4.53 / 5.00</span>
-            </div>
-            <div class="iso-bar-track">
-              <div class="iso-bar-fill" style="width: 90.6%;"></div>
-            </div>
-            <div class="iso-card-meta">
-              <span>Interpretation: <strong>Strongly Agree</strong></span>
-              <span>Rank <strong>#8</strong></span>
-            </div>
-          </div>
-
-          <!-- Item 9: Performance Efficiency -->
-          <div class="iso-bar-card">
-            <div class="iso-card-head">
-              <span class="iso-title">Performance Efficiency</span>
-              <span class="iso-score">4.52 / 5.00</span>
-            </div>
-            <div class="iso-bar-track">
-              <div class="iso-bar-fill" style="width: 90.4%;"></div>
-            </div>
-            <div class="iso-card-meta">
-              <span>Interpretation: <strong>Strongly Agree</strong></span>
-              <span>Rank <strong>#9</strong></span>
-            </div>
-          </div>
-        </div>
-
-        <!-- FUNCTIONAL TESTING SUMMARY TABLE -->
-        <h3 style="font-size: 1.45rem; font-weight: 800; color: var(--ink-primary); margin-bottom: 1.25rem;">Functional Testing Results Summary (15 IT & Blockchain Experts)</h3>
-        <div class="data-table-card">
-          <div class="table-responsive">
-            <table class="custom-table">
-              <thead>
-                <tr>
-                  <th>Testing Category</th>
-                  <th>Test Cases</th>
-                  <th>Passed</th>
-                  <th>Failed</th>
-                  <th>Success Rate</th>
-                  <th>Verification Evidence</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Authentication & Access Control (RBAC)</strong></td>
-                  <td>45</td>
-                  <td>45</td>
-                  <td>0</td>
-                  <td><span class="badge-pass">100% Pass</span></td>
-                  <td>Route protection, JWT token lifecycle, and wallet binding validated across 15 experts.</td>
-                </tr>
-                <tr>
-                  <td><strong>Project & Budget Allocation Workflows</strong></td>
-                  <td>45</td>
-                  <td>45</td>
-                  <td>0</td>
-                  <td><span class="badge-pass">100% Pass</span></td>
-                  <td>Database and Web3 ledger binding executed without computation or synchronization errors.</td>
-                </tr>
-                <tr>
-                  <td><strong>Blockchain & Smart Contract Auto-Release</strong></td>
-                  <td>45</td>
-                  <td>45</td>
-                  <td>0</td>
-                  <td><span class="badge-pass">100% Pass</span></td>
-                  <td>Multi-gate release conditions and database tamper detection verified 100% accurate.</td>
-                </tr>
-                <tr>
-                  <td><strong>Dashboard Updates & Anomaly Alerts</strong></td>
-                  <td>45</td>
-                  <td>45</td>
-                  <td>0</td>
-                  <td><span class="badge-pass">100% Pass</span></td>
-                  <td>Real-time data synchronization, over-budget warnings, and audit trail logs confirmed.</td>
-                </tr>
-                <tr>
-                  <td><strong>Citizen Monitoring & Public Portal</strong></td>
-                  <td>45</td>
-                  <td>45</td>
-                  <td>0</td>
-                  <td><span class="badge-pass">100% Pass</span></td>
-                  <td>Live project browsing, community proposal submission, and issue reporting functioned as intended.</td>
-                </tr>
-                <tr style="background: #f1f5f9; font-weight: 700;">
-                  <td><strong>Total Functional Performance</strong></td>
-                  <td><strong>225</strong></td>
-                  <td><strong>225</strong></td>
-                  <td><strong>0</strong></td>
-                  <td><span class="badge-pass">100% PASS</span></td>
-                  <td><strong>Zero failed test cases across all 15 independent expert evaluations.</strong></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 6: RESEARCH TEAM & ADVISER -->
-    <section class="section" id="team">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Academic Proponents</span>
-          <h2 class="section-title">Research Team & Advisory Committee</h2>
-          <p class="section-desc">College of Computer Studies, Laguna State Polytechnic University, Santa Cruz Main Campus, Santa Cruz, Laguna.</p>
-        </div>
-
-        <div class="team-cards-grid">
-          <!-- Researcher 1 -->
-          <div class="team-profile-card">
-            <div class="team-avatar">JA</div>
-            <h3>Jazaira M. Alias</h3>
-            <p>BS Information Technology<br>Web & Mobile Application Development</p>
-            <span class="team-role-tag">Lead Researcher</span>
-          </div>
-
-          <!-- Researcher 2 -->
-          <div class="team-profile-card">
-            <div class="team-avatar">HM</div>
-            <h3>Harry Anthony A. Martillano</h3>
-            <p>BS Information Technology<br>Web & Mobile Application Development</p>
-            <span class="team-role-tag">Lead Researcher / Developer</span>
-          </div>
-
-          <!-- Researcher 3 -->
-          <div class="team-profile-card">
-            <div class="team-avatar">AS</div>
-            <h3>Arianna C. Surbano</h3>
-            <p>BS Information Technology<br>Web & Mobile Application Development</p>
-            <span class="team-role-tag">Lead Researcher</span>
-          </div>
-
-          <!-- Adviser -->
-          <div class="team-profile-card">
-            <div class="team-avatar adviser-avatar">MV</div>
-            <h3 style="color: var(--lspu-crimson);">Mia V. Villarica, DIT</h3>
-            <p>Associate Dean, College of Computer Studies<br>Laguna State Polytechnic University</p>
-            <span class="team-role-tag adviser-tag">Thesis Adviser</span>
-          </div>
-        </div>
-
-        <!-- TECHNICAL REVIEW PANEL -->
-        <div style="background: var(--bg-surface); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.75rem; box-shadow: var(--shadow-sm);">
-          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--ink-primary); margin: 0 0 1rem;">Technical Contributors & Examination Panel</h4>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
-            <div>
-              <strong style="color: var(--ink-primary); display: block;">Mark P. Bernardino, MSCS</strong>
-              <span style="font-size: 0.88rem; color: var(--ink-muted);">System Expert</span>
-            </div>
-            <div>
-              <strong style="color: var(--ink-primary); display: block;">Gener F. Mosico, MSIT</strong>
-              <span style="font-size: 0.88rem; color: var(--ink-muted);">Technical Editor</span>
-            </div>
-            <div>
-              <strong style="color: var(--ink-primary); display: block;">Jhon Jhon P. Zotomayor</strong>
-              <span style="font-size: 0.88rem; color: var(--ink-muted);">Language Critic</span>
-            </div>
-            <div>
-              <strong style="color: var(--ink-primary); display: block;">Rachiel R. Rivano, PhD</strong>
-              <span style="font-size: 0.88rem; color: var(--ink-muted);">Data Analyst</span>
+                <div style="margin-top: 1.25rem; background: rgba(6, 11, 22, 0.6); border: 1px solid var(--border-card); border-radius: var(--radius-sm); padding: 1rem; font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary);">
+                  <strong style="color: var(--neon-cyan);">Key Findings:</strong> The 4.55 Overall Weighted Mean confirms that BayanLedger satisfactorily satisfies all ISO/IEC 25010 characteristics. Interaction Capability achieved the highest rating (4.58), demonstrating that municipal blockchain transparency is usable by everyday citizens and administrative officers alike.
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 7: DELIVERABLES & SUBMISSION COMPLIANCE -->
-    <section class="section section-alt" id="deliverables">
+    <!-- SECTION 7: LINKS & USER MANUAL / SETUP INSTRUCTIONS -->
+    <section class="section" id="links">
       <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Repository Deliverables</span>
-          <h2 class="section-title">Submission Links & Compliance</h2>
-          <p class="section-desc">Fulfilling the Laguna State Polytechnic University College of Computer Studies repository submission requirements.</p>
-        </div>
-
-        <div class="links-grid">
-          <!-- Live App -->
-          <a class="link-action-card" data-link="live" href="https://bayan-ledger.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <div class="link-action-top">
-              <div class="link-action-icon" aria-hidden="true">🚀</div>
-              <div>
-                <h3>Live Web Application</h3>
-                <p>Access the deployed public portal and official transparency dashboard on Vercel.</p>
-              </div>
-            </div>
-            <div class="link-action-url">
-              <span>bayan-ledger.vercel.app</span>
-              <span>↗</span>
-            </div>
-          </a>
-
-          <!-- GitHub Source Code -->
-          <a class="link-action-card" data-link="repo" href="https://github.com/harryanthonymartillano-ops/Bayan-Ledger" target="_blank" rel="noopener noreferrer">
-            <div class="link-action-top">
-              <div class="link-action-icon" aria-hidden="true">📂</div>
-              <div>
-                <h3>Source Code Repository</h3>
-                <p>Complete frontend, backend API, Solidity contracts, and migrations (shared with teamccs-git).</p>
-              </div>
-            </div>
-            <div class="link-action-url">
-              <span>github.com/harryanthonymartillano-ops/Bayan-Ledger</span>
-              <span>↗</span>
-            </div>
-          </a>
-
-          <!-- Full Manuscript -->
-          <a class="link-action-card" data-link="manuscript" href="https://docs.google.com/document/d/1ALUvDGA1UoQQPsH9fSCpFLGS6jcvA9Lg/edit#heading=h.6jmpc0u2mg27" target="_blank" rel="noopener noreferrer">
-            <div class="link-action-top">
-              <div class="link-action-icon" aria-hidden="true">📑</div>
-              <div>
-                <h3>Latest Thesis Manuscript</h3>
-                <p>Complete research paper, statistical chapters, literature review, and evaluation data.</p>
-              </div>
-            </div>
-            <div class="link-action-url">
-              <span>Google Docs Manuscript</span>
-              <span>↗</span>
-            </div>
-          </a>
-
-          <!-- Sepolia Smart Contract -->
-          <a class="link-action-card" data-link="contract" href="https://sepolia.etherscan.io/address/0x4db67F3D46D212895484C24A54c5b10cA07b61F5" target="_blank" rel="noopener noreferrer">
-            <div class="link-action-top">
-              <div class="link-action-icon" aria-hidden="true">⛓️</div>
-              <div>
-                <h3>Sepolia Smart Contract</h3>
-                <p>Inspect compiled Solidity bytecode, event logs, and on-chain verification on Etherscan.</p>
-              </div>
-            </div>
-            <div class="link-action-url">
-              <span>0x4db67F3D46D212895484C24A54c5b10cA07b61F5</span>
-              <span>↗</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- LSPU CCS COMPLIANCE BANNER -->
-        <div class="submission-compliance-banner">
-          <div class="compliance-shield-icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+        <div class="poster-card">
+          <div class="card-navy-header">
+            <h3 class="card-navy-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              <span>Project Links & User Manual / Setup Instructions</span>
+            </h3>
+            <span class="card-header-badge">Deployment & Evaluation</span>
           </div>
-          <div>
-            <h3>LSPU College of Computer Studies Endorsement Compliance</h3>
-            <p>
-              In accordance with the <em>LSPU CCS Research Repository Submission Requirement</em> ("NO REPOSITORY, NO ENDORSEMENT"), this website hosts the complete capstone deliverables including the updated manuscript, multi-tier system diagrams, executable source code, feature screenshots, and setup documentation. The GitHub repository is shared with the official evaluation account: <code>teamccs-git</code>.
-            </p>
+          <div class="card-body">
+            <!-- DELIVERABLE LINKS GRID -->
+            <div class="deliverables-grid">
+              <a class="deliverable-link-card" data-link="live" href="https://bayan-ledger.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="deliverable-icon">🚀</div>
+                  <h4>Live System Website</h4>
+                  <p>Deployed Vercel public portal and transparency dashboard.</p>
+                </div>
+                <span class="deliverable-url-label">bayan-ledger.vercel.app ↗</span>
+              </a>
+
+              <a class="deliverable-link-card" data-link="repo" href="https://github.com/harryanthonymartillano-ops/Bayan-Ledger" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="deliverable-icon">📂</div>
+                  <h4>GitHub Repository</h4>
+                  <p>Executable source code shared with teamccs-git.</p>
+                </div>
+                <span class="deliverable-url-label">harryanthonymartillano-ops/Bayan-Ledger ↗</span>
+              </a>
+
+              <a class="deliverable-link-card" data-link="contract" href="https://sepolia.etherscan.io/address/0x4db67F3D46D212895484C24A54c5b10cA07b61F5" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="deliverable-icon">⛓️</div>
+                  <h4>Sepolia Smart Contract</h4>
+                  <p>Verified contract on Ethereum Sepolia block explorer.</p>
+                </div>
+                <span class="deliverable-url-label">0x4db6...61F5 ↗</span>
+              </a>
+            </div>
+
+            <!-- USER MANUAL / SETUP INSTRUCTIONS -->
+            <h4 style="font-size: 1.15rem; font-weight: 800; color: #ffffff; margin: 1.5rem 0 0.85rem;">User Manual & Setup Instructions (Quickstart Guide)</h4>
+            <div class="code-setup-box">
+<span style="color: #94a3b8;"># 1. Clone the repository and install root dependencies</span>
+git clone https://github.com/harryanthonymartillano-ops/Bayan-Ledger.git
+cd Bayan-Ledger
+npm install
+
+<span style="color: #94a3b8;"># 2. Database Setup (Supabase PostgreSQL)</span>
+<span style="color: #cbd5e1;">- Log into Supabase Dashboard & open SQL Editor.</span>
+<span style="color: #cbd5e1;">- Execute schema script at <code>backend/supabase/schema.sql</code>.</span>
+<span style="color: #cbd5e1;">- Create storage bucket <code>project-documents</code>.</span>
+
+<span style="color: #94a3b8;"># 3. Backend API Service Setup</span>
+cd backend
+npm install
+cp .env.example .env   <span style="color: #94a3b8;"># Populate SUPABASE_URL, SERVICE_ROLE_KEY, JWT_SECRET</span>
+npm run dev            <span style="color: #94a3b8;"># Runs on http://localhost:5000/api</span>
+
+<span style="color: #94a3b8;"># 4. Frontend Application Setup</span>
+cd ..
+cp .env.example .env   <span style="color: #94a3b8;"># Configure VITE_CONTRACT_ADDRESS and VITE_API_URL</span>
+npm run dev            <span style="color: #94a3b8;"># Runs on http://localhost:3000</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- SITE FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <strong>BayanLedger Platform</strong>
-          <p>
-            A decentralized municipal project and budget transparency platform designed for the Municipal Planning and Development Office (MPDO) of the Municipality of Sta. Cruz, Laguna, Philippines.
-          </p>
-          <p style="font-size: 0.82rem; color: #64748b;">
-            Developed in partial fulfillment of the degree Bachelor of Science in Information Technology, Major in Web and Mobile Application Development.
-          </p>
-        </div>
-        <div class="footer-col">
-          <div class="footer-heading">Academic Department</div>
-          <ul class="footer-links">
-            <li><span>College of Computer Studies</span></li>
-            <li><span>Laguna State Polytechnic University</span></li>
-            <li><span>Santa Cruz Main Campus</span></li>
-            <li><span>Santa Cruz, Laguna, 4009</span></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <div class="footer-heading">Project Links</div>
-          <ul class="footer-links">
-            <li><a data-link="live" href="https://bayan-ledger.vercel.app/" target="_blank" rel="noopener noreferrer">Live System (Vercel)</a></li>
-            <li><a data-link="repo" href="https://github.com/harryanthonymartillano-ops/Bayan-Ledger" target="_blank" rel="noopener noreferrer">GitHub Source Code</a></li>
-            <li><a data-link="manuscript" href="https://docs.google.com/document/d/1ALUvDGA1UoQQPsH9fSCpFLGS6jcvA9Lg/edit#heading=h.6jmpc0u2mg27" target="_blank" rel="noopener noreferrer">Google Docs Manuscript</a></li>
-            <li><a data-link="contract" href="https://sepolia.etherscan.io/address/0x4db67F3D46D212895484C24A54c5b10cA07b61F5" target="_blank" rel="noopener noreferrer">Sepolia Etherscan</a></li>
-          </ul>
-        </div>
+  <!-- ICONIC POSTER BOTTOM WARNING BANNER (DARK MODE) -->
+  <aside class="poster-endorsement-banner" aria-label="Official College Endorsement Requirement">
+    <div class="container banner-inner-endorsement">
+      <div class="warning-triangle-icon" aria-hidden="true">
+        <span>!</span>
       </div>
+      <div class="endorsement-text">
+        NO REPOSITORY, NO ENDORSEMENT.
+      </div>
+    </div>
+  </aside>
 
-      <div class="footer-bottom">
-        <div>© 2026 BayanLedger Proponents (Alias, Martillano, Surbano). All rights reserved.</div>
-        <div>Compliant with Republic Act No. 7160 (Local Government Code of 1991).</div>
+  <!-- POSTER FOOTER (DARK MODE) -->
+  <footer class="poster-footer">
+    <div class="container footer-row">
+      <div>
+        <strong style="color: #ffffff;">Laguna State Polytechnic University • College of Computer Studies</strong><br>
+        Santa Cruz Main Campus, Santa Cruz, Laguna, Philippines
+      </div>
+      <div>
+        <span>Research Proponents: Jazaira M. Alias, Harry Anthony A. Martillano, Arianna C. Surbano</span><br>
+        <span>Thesis Adviser: Mia V. Villarica, DIT (Associate Dean, CCS)</span>
       </div>
     </div>
   </footer>
