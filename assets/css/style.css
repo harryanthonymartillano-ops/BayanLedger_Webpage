@@ -786,6 +786,16 @@ a:hover {
   box-shadow: 0 0 24px var(--accent-cyan-glow);
 }
 
+.team-avatar-img.adviser,
+.team-card.adviser-card .team-avatar-img {
+  border-color: var(--accent-crimson);
+  box-shadow: 0 0 16px var(--accent-crimson-glow);
+}
+
+.team-card.adviser-card:hover .team-avatar-img {
+  box-shadow: 0 0 24px var(--accent-crimson-glow);
+}
+
 .team-avatar-initials {
   width: 82px;
   height: 82px;
